@@ -432,26 +432,26 @@ For example, you might want to add an issue type that is related to work that is
 
 In Scrum, work typically moves through two main phases: 
 
-     - _Backlog Management_: Prepare and prioritize work by creating and refining epics, user stories and tasks. 
+- _Backlog Management_: Prepare and prioritize work by creating and refining epics, user stories and tasks. 
 
-     - _Sprint Execution_: Create and plan sprints, assign stories and tasks to members, and track story and task progress through to completion.
+- _Sprint Execution_: Create and plan sprints, assign stories and tasks to members, and track story and task progress through to completion.
 
-    ---
+---
 
-    ![Scrum project workflow](/assets/img/Taiga_scrum_project_workflow_new.png "Scrum project workflow")
+![Scrum project workflow](/assets/img/Taiga_scrum_project_workflow_new.png "Scrum project workflow")
 
-    ---
+---
 
-    The following table summarizes each step in the workflow.
+The following table summarizes each step in the workflow.
 
-    |Seq.#             |Step                    |Phase             |Description              | Example                         |
-    |:-----------------|:-----------------------|:-----------------|:------------------------|:--------------------------------|
-    |1                 |**[Create epics](#create-an-epic)**        |Backlog Management |Create _epics_, which group related user stories. Together, the user stories in an epic encapsulate work towards a specific product development.| An epic called _User Management Accessibility Redesign_ includes user stories that define development related to accessibility features in the User Management application.             
-    |2                 |**[Create user stories](#create-a-user-story)**      |Backlog Management      |Within an epic and from the backlog, create _user stories_ that define specific development needed to accomplish the goal of the epic.| In the epic called _User Management Accessibility Redesign_, there's a user story called _Change UI Labels_, which defines changing the UI text headings to comply with WCAG requirements.
-    |3                 |**[Create tasks](#create-a-task)**             |Backlog Management      |Within each user story, create _tasks_, which break up the story work into smaller, manageable chunks that different members of the team can work on. | For the user story, _Change UI Labels_, there are 3 tasks: _Propose New UI Labels_, _Update Text Labels in DB_, and _Test New UI Labels_. Each task is assigned to a different member of the team.|
-    |4                 |**[Create a sprint](#create-a-sprint)**           |Sprint Execution        |Create a _sprint_, a timeboxed period for completing user stories. Typically, multiple sprints are created well in advance of their start dates.| A sprint called _DLogix-S1_ is a two-week sprint, starting on 1/12 and ending on 1/19.|
-    |5                 |**[Assign user stories to sprints](#assign-stories-to-a-sprint)**   |Sprint Execution        |From the backlog, according to deployment priorities, related work, and development dependencies, determine which user stories should be assigned to upcoming sprints, and assign them accordingly.| For the sprint, _DLogix-S1_, assign the following user stories: _Change UI Labels_, _Create New Filters_, and _Enhance Search_. 
-    |6                 |**[Track progress and complete user stories](#track-progress-and-complete-user-stories)**        |Sprint Execution        |During a sprint, track the status of user stories on a sprint taskboard. During the daily standups, discuss any blockers, issues, and dependencies, and try to resolve them so that members can complete the work defined in the relevant stories. At the end of a sprint, all stories should have a completed status. |One week into the _DLogix-S1_ sprint, the stories, _Change UI Labels_ and _Create New Filters_ are _In Progress_, and _Enhance Search_ has a dependency on another team that is currently being resolved.
+|Seq.#             |Step                    |Phase             |Description              | Example                         |
+|:-----------------|:-----------------------|:-----------------|:------------------------|:--------------------------------|
+|1                 |**[Create epics](#create-an-epic)**        |Backlog Management |Create _epics_, which group related user stories. Together, the user stories in an epic encapsulate work towards a specific product development.| An epic called _User Management Accessibility Redesign_ includes user stories that define development related to accessibility features in the User Management application.             
+|2                 |**[Create user stories](#create-a-user-story)**      |Backlog Management      |Within an epic and from the backlog, create _user stories_ that define specific development needed to accomplish the goal of the epic.| In the epic called _User Management Accessibility Redesign_, there's a user story called _Change UI Labels_, which defines changing the UI text headings to comply with WCAG requirements.
+|3                 |**[Create tasks](#create-a-task)**             |Backlog Management      |Within each user story, create _tasks_, which break up the story work into smaller, manageable chunks that different members of the team can work on. | For the user story, _Change UI Labels_, there are 3 tasks: _Propose New UI Labels_, _Update Text Labels in DB_, and _Test New UI Labels_. Each task is assigned to a different member of the team.|
+|4                 |**[Create a sprint](#create-a-sprint)**           |Sprint Execution        |Create a _sprint_, a timeboxed period for completing user stories. Typically, multiple sprints are created well in advance of their start dates.| A sprint called _DLogix-S1_ is a two-week sprint, starting on 1/12 and ending on 1/19.|
+|5                 |**[Assign user stories to sprints](#assign-stories-to-a-sprint)**   |Sprint Execution        |From the backlog, according to deployment priorities, related work, and development dependencies, determine which user stories should be assigned to upcoming sprints, and assign them accordingly.| For the sprint, _DLogix-S1_, assign the following user stories: _Change UI Labels_, _Create New Filters_, and _Enhance Search_. 
+|6                 |**[Track progress and complete user stories](#track-progress-and-complete-user-stories)**        |Sprint Execution        |During a sprint, track the status of user stories on a sprint taskboard. During the daily standups, discuss any blockers, issues, and dependencies, and try to resolve them so that members can complete the work defined in the relevant stories. At the end of a sprint, all stories should have a completed status. |One week into the _DLogix-S1_ sprint, the stories, _Change UI Labels_ and _Create New Filters_ are _In Progress_, and _Enhance Search_ has a dependency on another team that is currently being resolved.
 
 ## 📋 Backlog management
 
@@ -490,10 +490,13 @@ Review the [Scrum project workflow](#scrum-project-workflow)
 
   <li>
     On the following screen, enter your epic details.
-    <figure>
-      <img src="/assets/img/Taiga_epic1.png" alt="Enter epic details">
-      <figcaption>Enter epic details</figcaption>
-    </figure>
+	
+	---
+	
+	![Enter epic details](/assets/img/Taiga_epic1.png "Enter epic details")
+	
+	---
+	
 
     <table>
       <thead>
@@ -523,11 +526,12 @@ Review the [Scrum project workflow](#scrum-project-workflow)
     Select <strong>Create Epic</strong>.
     <p>The system creates the new epic and displays it in a new row on the <strong>Epics</strong> screen.</p>
 
-    <figure>
-      <img src="/assets/img/Taiga_epic2.png" alt="New epic created">
-      <figcaption>New epic created</figcaption>
-    </figure>
-
+    ---
+	
+	![New epic created](/assets/img/Taiga_epic2.png "New epic created")
+	
+	---
+	
     <table>
       <thead>
         <tr><th>Field</th><th>Description</th></tr>
@@ -939,11 +943,13 @@ In Taiga, issues can be managed independently of Scrum or Kanban boards, allowin
 
   <li>
     On the <strong>New issue</strong> screen, complete the fields.
-    <figure>
-      <img src="/assets/img/Taiga_issue1.png" alt="Create new issue">
-      <figcaption>Create new issue</figcaption>
-    </figure>
+	
+	---
 
+    ![Create new issue](/assets/img/Taiga_issue1.png "Create new issue")
+
+    ---
+  
     <table>
       <thead>
         <tr><th>Field</th><th>Description</th></tr>
@@ -963,10 +969,13 @@ In Taiga, issues can be managed independently of Scrum or Kanban boards, allowin
   <li>
     Select <strong>Create</strong>.
     <p>The new issue appears on the <strong>Issues</strong> page.</p>
-    <figure>
-      <img src="/assets/img/Taiga_issue2.png" alt="New issue">
-      <figcaption>New issue</figcaption>
-    </figure>
+	
+	---
+
+    ![New issue](/assets/img/Taiga_issue2.png "New issue")
+
+    ---
+	
   </li>
 
   <li>
@@ -986,10 +995,13 @@ In Taiga, issues can be managed independently of Scrum or Kanban boards, allowin
       <li>Select either <strong>Include</strong> or <strong>Exclude</strong>.</li>
       <li>For each attribute (such as <strong>Type</strong>, <strong>Severity</strong>, <strong>Priority</strong>, <strong>Status</strong>, etc.), select the values you want.</li>
     </ol>
-    <figure>
-      <img src="/assets/img/Taiga_issue3.png" alt="Filter issues">
-      <figcaption>Filter issues</figcaption>
-    </figure>
+	
+	---
+
+    ![Filter issues](/assets/img/Taiga_issue3.png "Filter issues")
+
+    ---
+   
   </li>
 
   <li>
