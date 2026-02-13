@@ -18,17 +18,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'        # Compatible with GitHub Pages Jekyll setup [1](https://github.com/msys2/MSYS2-packages/issues/2784)
-          bundler-cache: true
+          ruby-version: '3.1'
+          bundler-cache: false   # we'll control bundler steps
+      - name: Adjust lockfile for CI
+        run: |
+          bundle update --bundler
+          bundle lock --add-platform x86_64-linux
+      - name: Install gems
+        run: bundle install --jobs 4
+
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
+
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
