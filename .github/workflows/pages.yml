@@ -24,6 +24,7 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: false
 
+      # Make the Gemfile.lock usable on the Linux runner
       - name: Adjust lockfile for CI
         run: |
           bundle update --bundler
@@ -32,31 +33,32 @@ jobs:
       - name: Install gems
         run: bundle install --jobs 4
 
+      # --- Image rewrite runs only in CI (repo stays unchanged) ---
+      # Converts:
+      #   ![Alt](/assets/img/pic.png "Title")
+      # into:
+      #   {{ '/assets/img/pic.png' | relative_url }}{: title="Title"}
+      # wrapped as a real <img> tag so it renders as an image.
       - name: Rewrite image URLs for GH Pages (workspace only)
         shell: bash
         run: |
           ruby <<'RUBY'
-          Dir.glob('**/*.md').each do |file|        # 'file' is the Markdown file path
+          Dir.glob('**/*.md').each do |file|
             text = File.read(file)
 
-            # Convert:
-            #   ![Alt](/assets/img/pic.png "Title")
-            #   ![Alt](/assets/img/pic.png)
-            # into:
-            #   {{ '/assets/img/pic.png' | relative_url }}{: title="Title"}
-            #   {{ '/assets/img/pic.png' | relative_url }}
+            # Replace Markdown image syntax that starts with /assets/...
             text = text.gsub(/!\[([^\]]*)\]\(\/assets\/([^)"]+)(?:\s+"([^"]*)")?\)/) do
-              alt   = $1
-              img   = $2          # image path
+              alt   = ($1 || "").gsub('"', '&quot;')
+              img   = $2
               title = $3
-              if title
-                "{{ '/assets/#{img}' | relative_url }}{: title=\"#{title}\"}"
+              if title && !title.empty?
+                %Q({{ )
               else
-                "{{ '/assets/#{img}' | relative_url }}"
+                %Q({{ )
               end
             end
 
-            File.write(file, text)                  # write back to the SAME Markdown file
+            File.write(file, text)
           end
           RUBY
 
