@@ -24,7 +24,7 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: false
 
-      # Make the Windows-generated lockfile usable on Linux runners
+      # Make a Windows-generated lockfile usable on the Linux runner
       - name: Adjust lockfile for CI
         run: |
           bundle update --bundler
@@ -33,14 +33,13 @@ jobs:
       - name: Install gems
         run: bundle install --jobs 4
 
-      # Rewrites only in the CI workspace (your repo files remain unchanged).
-      # Converts:
-      #   ![ssets/img/pic.png
-      #   /assets/img/pic.png "Title"
-      # into:
-      #   {{ '/assets/img/pic.png' | relative_url }}
-      #   {{ '/assets/img/pic.png' | relative_url }} "Title"
-      - name: Rewrite Markdown image URLs for GH Pages (workspace only)
+      # --- Workspace-only rewrite (repo remains unchanged) ---
+      # Converts Markdown images beginning with /assets/... into Markdown images
+      # whose URL is generated with Jekyll's relative_url:
+      #   ![Alt](/assets/img/pic.png "Title")
+      #   =>
+      #   ![Alt]({{ '/assets/img/pic.png' | relative_url }} "Title")
+      - name: Rewrite /assets images to use relative_url (workspace only)
         shell: bash
         run: |
           ruby <<'RUBY'
@@ -48,13 +47,14 @@ jobs:
             text = File.read(file)
 
             text = text.gsub(/!\[([^\]]*)\]\(\/assets\/([^)"]+?)(?:\s+"([^"]*)")?\)/) do
-              alt   = ($1 || "").gsub('"','&quot;')
+              alt   = $1 || ""
               img   = $2
               title = $3
+
               if title && !title.empty?
-                %Q({{ '/assets/#{img}' | relative_url }} "#{title}")
+                %Q(![#{alt}]({{ '/assets/#{img}' | relative_url }} "#{title}"))
               else
-                %Q({{ '/assets/#{img}' | relative_url }})
+                %Q(![#{alt}]({{ '/assets/#{img}' | relative_url }}))
               end
             end
 
