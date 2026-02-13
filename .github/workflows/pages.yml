@@ -36,28 +36,27 @@ jobs:
         shell: bash
         run: |
           ruby <<'RUBY'
-          Dir.glob('**/*.md').each do |path|
-            text = File.read(path)
+          Dir.glob('**/*.md').each do |file|        # 'file' is the Markdown file path
+            text = File.read(file)
 
-            # Convert Markdown images pointing to /assets/... into the Jekyll-safe form
-            # Input:
-            #   ![Alt](/assets/img/pic.png)
+            # Convert:
             #   ![Alt](/assets/img/pic.png "Title")
-            # Output:
-            #   {{ '/assets/img/pic.png' | relative_url }}
+            #   ![Alt](/assets/img/pic.png)
+            # into:
             #   {{ '/assets/img/pic.png' | relative_url }}{: title="Title"}
-            text.gsub!(/!\[([^\]]*)\]\(\/assets\/([^)"]+)(?:\s+"([^"]*)")?\)/) do
-              alt   = $1 # (alt not used because Liquid-in-URL breaks Markdown's title placement)
-              path  = $2
+            #   {{ '/assets/img/pic.png' | relative_url }}
+            text = text.gsub(/!\[([^\]]*)\]\(\/assets\/([^)"]+)(?:\s+"([^"]*)")?\)/) do
+              alt   = $1
+              img   = $2          # image path
               title = $3
               if title
-                "{{ '/assets/#{path}' | relative_url }}{: title=\"#{title}\"}"
+                "{{ '/assets/#{img}' | relative_url }}{: title=\"#{title}\"}"
               else
-                "{{ '/assets/#{path}' | relative_url }}"
+                "{{ '/assets/#{img}' | relative_url }}"
               end
             end
 
-            File.write(path, text)
+            File.write(file, text)                  # write back to the SAME Markdown file
           end
           RUBY
 
