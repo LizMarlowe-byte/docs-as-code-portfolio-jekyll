@@ -941,7 +941,7 @@ In Taiga, issues can be managed independently of Scrum or Kanban boards, allowin
   
 1. Select <strong>Create</strong>.
 
-    The new issue appears on the <strong>Issues</strong> page.
+    The new issue appears on the **Issues** page.
 	
 1. To create multiple issues in bulk:
     <ol>
@@ -952,12 +952,12 @@ In Taiga, issues can be managed independently of Scrum or Kanban boards, allowin
     <p>The system creates the issues.</p>
 
 1. To filter existing issues:
-    <ol>
-      <li>Select <strong>Filters</strong>.</li>
-      <li>Select either <strong>Include</strong> or <strong>Exclude</strong>.</li>
-      <li>For each attribute (such as <strong>Type</strong>, <strong>Severity</strong>, <strong>Priority</strong>, <strong>Status</strong>, etc.), select the values you want.</li>
-    </ol>
-    <p>As needed, change the status of issues until completion.</p>
+
+    1. Select <strong>Filters</strong>.
+	1. Select either <strong>Include</strong> or <strong>Exclude</strong>.
+	1. For each attribute (such as <strong>Type</strong>, <strong>Severity</strong>, <strong>Priority</strong>, <strong>Status</strong>, etc.), select the values you want.
+
+    As needed, change the status of issues until completion.
 
 ### Manage the team board
 
