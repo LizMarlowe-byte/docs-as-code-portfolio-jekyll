@@ -1,0 +1,15 @@
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  {% if page.collection %}
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <span aria-hidden="true">/</span>
+    {% assign map = "user-guides:User Guides|api-guides:API Guides|how-to-articles:How To Articles|technical-reference-guides:Technical Reference Guides" | split:"|" %}
+    {% assign label = page.collection %}
+    {% for pair in map %}
+      {% assign p = pair | split: ":" %}
+      {% if p[0] == page.collection %}
+        {% assign label = p[1] %}
+      {% endif %}
+    {% endfor %}
+    <a href="{{ '/' | append: page.collection | append: '/' | relative_url }}">{{ label }}</a>
+  {% endif %}
+</nav>

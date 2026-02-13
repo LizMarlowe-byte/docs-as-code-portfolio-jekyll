@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="lmGradientBright" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E676"/>   <!-- bright green -->
+      <stop offset="25%" stop-color="#00C6FF"/>  <!-- teal -->
+      <stop offset="50%" stop-color="#0072FF"/>  <!-- blue -->
+      <stop offset="75%" stop-color="#7B61FF"/>  <!-- violet -->
+      <stop offset="100%" stop-color="#D500F9"/> <!-- magenta -->
+    </linearGradient>
+  </defs>
+
+  <rect width="100" height="100" rx="18" fill="url(#lmGradientBright)"/>
+  <text x="50" y="65"
+        font-family="Arial, sans-serif"
+        font-size="50"
+        font-weight="700"
+        fill="white"
+        text-anchor="middle">
+    LM
+  </text>
+</svg>

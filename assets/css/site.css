@@ -1,0 +1,383 @@
+/* ----------------------------------------------------------
+   Root Variables (Light Theme Only)
+----------------------------------------------------------- */
+:root {
+  --bg: #ffffff;
+  --bg-alt: #f6f8fa;
+  --border: #e2e8f0;
+  --text: #1a1a1a;
+  --text-muted: #6b7280;
+  --primary: #2563eb;        /* Blue-600 */
+  --primary-light: #3b82f6;  /* Blue-500 */
+  --sidebar-bg: #fafafa;
+  --toc-bg: #ffffff;
+  --radius: 8px;
+  --transition: 0.2s ease;
+  --max-content: 760px;
+}
+
+/* ----------------------------------------------------------
+   Layout Grid
+----------------------------------------------------------- */
+.layout-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr 220px;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+/* Make sure the middle column can shrink without forcing overlap */
+main.content { min-width: 0; }
+
+/* ----------------------------------------------------------
+   Header Bar
+----------------------------------------------------------- */
+.site-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 0.9rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between; /* keep nav on the right */
+  align-items: center;
+  position: relative;              /* allow centering the title absolutely */
+  min-height: 56px;                /* stable header height */
+
+}
+
+/* Center the title horizontally in the bar */
+.header-left {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.header-left a {
+  font-size: 2.0rem;
+  font-weight: 800;
+  letter-spacing: .2px;
+  text-decoration: none;
+  background: linear-gradient(90deg, #2563eb 0%, #7c3aed 50%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;              /* shows the gradient inside text */
+
+}
+
+.header-nav {
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.header-nav a {
+  margin-left: 1.25rem;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.header-nav a:hover {
+  color: var(--primary);
+}
+
+/* ----------------------------------------------------------
+   Sidebar Styling
+----------------------------------------------------------- */
+.sidebar {
+  background: var(--sidebar-bg);
+  padding: 1.5rem;
+  border-right: 1px solid var(--border);
+  border-radius: var(--radius);
+  height: fit-content;
+  position: sticky;
+  top: 80px;
+}
+
+.sidebar-nav {
+  font-size: 0.95rem;
+}
+
+.sidebar-section {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-section-header {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 0.25rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-section-header:hover {
+  color: var(--primary);
+}
+
+.sidebar-items {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.sidebar-items.expanded {
+  display: block;
+}
+
+.sidebar-items li {
+  margin: 0.3rem 0;
+}
+
+.sidebar-items a {
+  text-decoration: none;
+  color: var(--text);
+  transition: var(--transition);
+}
+
+.sidebar-items a:hover {
+  color: var(--primary);
+}
+
+.sidebar-items li.active > a {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Keyboard focus outline for collapsible nav headers */
+button.sidebar-section-header:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* ----------------------------------------------------------
+   Content Area
+----------------------------------------------------------- */
+.content article {
+  max-width: var(--max-content);
+  padding-bottom: 4rem;
+}
+
+h1, h2, h3 {
+  color: var(--text);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p, li {
+  line-height: 1.6;
+}
+
+/* Native ordered list spacing (after removing CSS counters) */
+.content article ol { 
+  list-style: decimal; 
+  padding-left: 1.5rem; 
+}
+.content article ol > li { 
+  margin: 0.6rem 0; 
+}
+
+/* --- RESPONSIVE IMAGE SIZING FOR CONTENT --- */
+.content article img {
+  display: block;
+  max-width: min(100%, 750px); /* Prevent overly large screenshots */
+  height: auto;
+  margin: 1.25rem auto;       /* Center the images */
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.08); /* subtle border to separate from bg */
+}
+
+
+
+/* --- CLEAN, PROFESSIONAL TABLE STYLING --- */
+.content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.25rem 0;
+  font-size: 0.95rem;
+}
+
+.content th,
+.content td {
+  border: 1px solid #d9d9d9;
+  padding: 0.5rem 0.75rem;
+  vertical-align: top;
+  background: #fff;
+}
+
+.content thead th {
+  background: #f2f2f2;
+  font-weight: 600;
+}
+
+/* ----------------------------------------------------------
+   Right-hand Table of Contents (ToC)
+----------------------------------------------------------- */
+.toc {
+  background: var(--toc-bg);
+  padding: 1.5rem;
+  border-left: 1px solid var(--border);
+  border-radius: var(--radius);
+  position: sticky;
+  top: 4rem;
+  height: fit-content;
+  max-height: calc(100vh - 5rem);
+  overflow-y: auto;
+  z-index: 1;
+
+}
+
+.toc h3 {
+  margin-top: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.toc-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+
+.toc-list li {
+  margin: 0.5rem 0;
+}
+
+.toc-list a {
+  text-decoration: none;
+  color: var(--text-muted);
+}
+
+.toc-list a:hover {
+  color: var(--primary);
+}
+
+.toc-list a.active {
+  font-weight: 600;
+  color: var(--primary);
+  border-left: 3px solid var(--primary);
+  padding-left: .5rem;
+}
+
+/* ----------------------------------------------------------
+   Admonitions (Tip, Note, Warning)
+----------------------------------------------------------- */
+blockquote {
+  border-left: 4px solid var(--primary);
+  background: var(--bg-alt);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+}
+
+blockquote p {
+  margin: 0.4rem 0;
+}
+
+/* ----------------------------------------------------------
+   Card Layout for Category Landing Pages
+----------------------------------------------------------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: var(--transition);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.card:hover {
+  border-color: var(--primary-light);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-desc {
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+/* ----------------------------------------------------------
+   Footer
+----------------------------------------------------------- */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 4rem;
+  color: var(--text-muted);
+}
+
+/* ----------------------------------------------------------
+   Small Screens
+----------------------------------------------------------- */
+@media (max-width: 1200px) {
+  .layout-grid {
+    grid-template-columns: 1fr; /* single column: sidebar stays on top, then content, then ToC */
+    gap: 1.5rem;
+  }
+
+  /* Sidebar becomes non-sticky already at 850px in your file; keeping it sticky here is optional */
+  .sidebar {
+    position: static;
+  }
+
+  .toc {
+    position: relative;   /* not sticky on tablet */
+    top: 0;
+    max-height: none;
+    overflow: visible;
+    margin-top: 1rem;
+    display: block;       /* ensure it's visible on tablet */
+  }
+}
+
+
+.breadcrumb { color: var(--text-muted); font-size: .9rem; margin: .5rem 0 1rem; }
+.breadcrumb a { color: var(--text-muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--primary); text-decoration: underline; }
+.breadcrumb span { margin: 0 .35rem; }
+
+@media (max-width: 850px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: static;
+    border-right: none;
+  }
+}

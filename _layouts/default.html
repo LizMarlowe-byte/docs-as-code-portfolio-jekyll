@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {% include meta.html %}
+
+  <title>
+    {% if page.title %}{{ page.title | escape }} · {% endif %}Docs Site Using Jekyll
+  </title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
+
+  <!-- Custom JS -->
+  <script defer src="{{ '/assets/js/site.js' | relative_url }}"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-left">
+        <a class="site-title" href="{{ '/' | relative_url }}">Docs Site Using Jekyll</a>
+      </div>
+      <nav class="header-nav">
+        <a href="{{ '/' | relative_url }}">About this Site</a>
+        <a href="https://github.com/LizMarlowe-byte/docs-as-code-portfolio-jekyll"
+           target="_blank" rel="noopener">View on GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 3-column Layout -->
+  <div class="layout-grid">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      {% include sidebar.html %}
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      {% include breadcrumb.html %}
+      <article>
+        {% if page.title %}
+          <h1>{{ page.title }}</h1>
+        {% endif %}
+
+        {% if page.summary %}
+          <p class="lead">{{ page.summary }}</p>
+        {% endif %}
+
+        {{ content }}
+      </article>
+    </main>
+
+    <!-- Right-hand Table of Contents -->
+    <aside class="toc">
+      {% include toc.html %}
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <small>© {{ site.time | date: '%Y' }} Liz Marlowe</small>
+    </div>
+  </footer>
+</body>
+</html>

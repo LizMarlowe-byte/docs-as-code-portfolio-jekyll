@@ -1,0 +1,6 @@
+{% if page.summary %}
+  <meta name="description" content="{{ page.summary | strip_html | normalize_whitespace }}">
+  <meta property="og:description" content="{{ page.summary | strip_html | normalize_whitespace }}">
+{% endif %}
+<meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}Docs Site Using Jekyll">
+<meta property="og:type" content="article">

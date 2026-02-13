@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+{% if page.summary %}
+  <p class="lead">{{ page.summary }}</p>
+{% endif %}
+
+<div class="card-grid">
+  {%- assign items = site[page.collection] | sort: "nav_order" -%}
+
+  {%- comment -%} Render cards for all documents in this collection except this index page {%- endcomment -%}
+  {%- for doc in items -%}
+    {%- unless doc.url == page.url or doc.name == 'index.md' or doc.name == 'index.html' -%}
+      {{ doc.url | relative_url }}
+        <div class="card-title">{{ doc.title | default: doc.name }}</div>
+        {% if doc.summary %}
+          <div class="card-desc">{{ doc.summary }}</div>
+        {% endif %}
+      </a>
+    {%- endunless -%}
+  {%- endfor -%}
+</div>

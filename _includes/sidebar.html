@@ -1,0 +1,52 @@
+<nav class="sidebar-nav">
+  <!-- About (always visible) -->
+  <div class="sidebar-section">
+    <div class="sidebar-section-header">
+      <a href="{{ '/' | relative_url }}">About this Site</a>
+    </div>
+  </div>
+
+  {% assign sections = "user-guides,api-guides,how-to-articles,technical-reference-guides" | split: "," %}
+
+  {%- comment -%}
+    Map collection keys to pretty display labels (preserves API acronym casing)
+  {%- endcomment -%}
+  {% assign label_map =
+    "user-guides:User Guides|api-guides:API Guides|how-to-articles:How To Articles|technical-reference-guides:Technical Reference Guides"
+    | split: "|"
+  %}
+
+  {% assign current = page.collection | default: '' %}
+
+  {% for section in sections %}
+    {% assign items = site[section] | sort: "nav_order" %}
+    {% assign open = section == current %}
+
+    {%- comment -%} Lookup pretty label for this section {%- endcomment -%}
+    {% assign pretty = section %}
+    {% for pair in label_map %}
+      {% assign parts = pair | split: ":" %}
+      {% if parts[0] == section %}
+        {% assign pretty = parts[1] %}
+      {% endif %}
+    {% endfor %}
+
+    <div class="sidebar-section">
+      <!-- Collapsible header -->
+      <button type="button" class="sidebar-section-header collapsible {% if open %}open{% endif %}">
+        {{ pretty }}
+      </button>
+
+      <!-- Items (exclude the collection index pages) -->
+      <ul class="sidebar-items {% if open %}expanded{% endif %}">
+        {% for doc in items %}
+          {% unless doc.name == 'index.md' or doc.name == 'index.html' %}
+            <li class="{% if doc.url == page.url %}active{% endif %}">
+              <a href="{{ doc.url | relative_url }}">{{ doc.title | default: doc.name }}</a>
+            </li>
+          {% endunless %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</nav>
