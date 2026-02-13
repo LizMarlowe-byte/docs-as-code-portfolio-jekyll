@@ -491,11 +491,11 @@ Review the [Scrum project workflow](#scrum-project-workflow)
   <li>
     On the following screen, enter your epic details.
 	
-	---
+    ---
 	
-	![Enter epic details](/assets/img/Taiga_epic1.png "Enter epic details")
+    ![Enter epic details](/assets/img/Taiga_epic1.png "Enter epic details")
 	
-	---
+    ---
 	
 
     <table>
@@ -527,10 +527,10 @@ Review the [Scrum project workflow](#scrum-project-workflow)
     <p>The system creates the new epic and displays it in a new row on the <strong>Epics</strong> screen.</p>
 
     ---
+
+    ![New epic created](/assets/img/Taiga_epic2.png "New epic created")
 	
-	![New epic created](/assets/img/Taiga_epic2.png "New epic created")
-	
-	---
+    ---
 	
     <table>
       <thead>
@@ -926,25 +926,17 @@ Every project encounters issues, which may include bugs, questions, dependencies
 
 In Taiga, issues can be managed independently of Scrum or Kanban boards, allowing you to separate core work items from blockers and ancillary tasks. This approach helps maintain focus on primary deliverables while tracking and resolving obstacles efficiently.
 
-<p><strong>Procedure</strong></p>
+**Procedure**
 
-<ol start="1">
-  <li>
-    From the <a href="https://tree.taiga.io/">Taiga</a> home page, under <strong>My projects</strong>, select the project you want.
-  </li>
+1. From the <a href="https://tree.taiga.io/">Taiga</a> home page, under <strong>My projects</strong>, select the project you want.
 
-  <li>
-    On the project page, from the left sidebar, select <strong>Issues</strong>.
-  </li>
+1. On the project page, from the left sidebar, select <strong>Issues</strong>.
 
-  <li>
-    To create a new issue, select <strong>+ New Issue</strong>.
-  </li>
+1. To create a new issue, select <strong>+ New Issue</strong>.
 
-  <li>
-    On the <strong>New issue</strong> screen, complete the fields.
-	
-	---
+1. On the <strong>New issue</strong> screen, complete the fields.
+
+    ---
 
     ![Create new issue](/assets/img/Taiga_issue1.png "Create new issue")
 
@@ -964,22 +956,18 @@ In Taiga, issues can be managed independently of Scrum or Kanban boards, allowin
         <tr><td>Priority</td><td>Select one of the following: <strong>Low</strong>, <strong>Normal</strong>, <strong>High</strong>.</td></tr>
       </tbody>
     </table>
-  </li>
+  
+1. Select <strong>Create</strong>.
 
-  <li>
-    Select <strong>Create</strong>.
-    <p>The new issue appears on the <strong>Issues</strong> page.</p>
-	
-	---
+    The new issue appears on the <strong>Issues</strong> page.</p>
+
+    ---
 
     ![New issue](/assets/img/Taiga_issue2.png "New issue")
 
     ---
 	
-  </li>
-
-  <li>
-    To create multiple issues in bulk:
+1. To create multiple issues in bulk:
     <ol>
       <li>Select the <strong>bulk insert</strong> icon.</li>
       <li>On the <strong>New bulk insert</strong> screen, enter each issue name on a new line.</li>
@@ -996,7 +984,7 @@ In Taiga, issues can be managed independently of Scrum or Kanban boards, allowin
       <li>For each attribute (such as <strong>Type</strong>, <strong>Severity</strong>, <strong>Priority</strong>, <strong>Status</strong>, etc.), select the values you want.</li>
     </ol>
 	
-	---
+    ---
 
     ![Filter issues](/assets/img/Taiga_issue3.png "Filter issues")
 
