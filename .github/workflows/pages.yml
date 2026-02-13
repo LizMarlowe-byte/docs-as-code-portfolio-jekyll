@@ -24,7 +24,7 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: false
 
-      # Make the Gemfile.lock usable on the Linux runner
+      # Make the Windows-generated lockfile usable on Linux runners
       - name: Adjust lockfile for CI
         run: |
           bundle update --bundler
@@ -33,28 +33,28 @@ jobs:
       - name: Install gems
         run: bundle install --jobs 4
 
-      # --- Image rewrite runs only in CI (repo stays unchanged) ---
+      # Rewrites only in the CI workspace (your repo files remain unchanged).
       # Converts:
-      #   ![Alt](/assets/img/pic.png "Title")
+      #   ![ssets/img/pic.png
+      #   /assets/img/pic.png "Title"
       # into:
-      #   {{ '/assets/img/pic.png' | relative_url }}{: title="Title"}
-      # wrapped as a real <img> tag so it renders as an image.
-      - name: Rewrite image URLs for GH Pages (workspace only)
+      #   {{ '/assets/img/pic.png' | relative_url }}
+      #   {{ '/assets/img/pic.png' | relative_url }} "Title"
+      - name: Rewrite Markdown image URLs for GH Pages (workspace only)
         shell: bash
         run: |
           ruby <<'RUBY'
           Dir.glob('**/*.md').each do |file|
             text = File.read(file)
 
-            # Replace Markdown image syntax that starts with /assets/...
-            text = text.gsub(/!\[([^\]]*)\]\(\/assets\/([^)"]+)(?:\s+"([^"]*)")?\)/) do
-              alt   = ($1 || "").gsub('"', '&quot;')
+            text = text.gsub(/!\[([^\]]*)\]\(\/assets\/([^)"]+?)(?:\s+"([^"]*)")?\)/) do
+              alt   = ($1 || "").gsub('"','&quot;')
               img   = $2
               title = $3
               if title && !title.empty?
-                %Q({{ )
+                %Q({{ '/assets/#{img}' | relative_url }} "#{title}")
               else
-                %Q({{ )
+                %Q({{ '/assets/#{img}' | relative_url }})
               end
             end
 
