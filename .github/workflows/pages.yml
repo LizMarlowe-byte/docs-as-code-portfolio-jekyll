@@ -22,46 +22,48 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: false   # we'll control bundler steps
+          bundler-cache: false
+
       - name: Adjust lockfile for CI
         run: |
           bundle update --bundler
           bundle lock --add-platform x86_64-linux
+
       - name: Install gems
         run: bundle install --jobs 4
+
+      - name: Rewrite image URLs for GH Pages (workspace only)
+        shell: bash
+        run: |
+          ruby <<'RUBY'
+          Dir.glob('**/*.md').each do |path|
+            text = File.read(path)
+
+            # Convert Markdown images pointing to /assets/... into the Jekyll-safe form
+            # Input:
+            #   ![Alt](/assets/img/pic.png)
+            #   ![Alt](/assets/img/pic.png "Title")
+            # Output:
+            #   {{ '/assets/img/pic.png' | relative_url }}
+            #   {{ '/assets/img/pic.png' | relative_url }}{: title="Title"}
+            text.gsub!(/!\[([^\]]*)\]\(\/assets\/([^)"]+)(?:\s+"([^"]*)")?\)/) do
+              alt   = $1 # (alt not used because Liquid-in-URL breaks Markdown's title placement)
+              path  = $2
+              title = $3
+              if title
+                "{{ '/assets/#{path}' | relative_url }}{: title=\"#{title}\"}"
+              else
+                "{{ '/assets/#{path}' | relative_url }}"
+              end
+            end
+
+            File.write(path, text)
+          end
+          RUBY
 
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
-        
-        - name: Rewrite image URLs for GH Pages (workspace only)
-  shell: bash
-  run: |
-    ruby <<'RUBY'
-    Dir.glob('**/*.md').each do |path|
-      text = File.read(path)
-
-      # Convert Markdown images pointing to /assets/... into the Jekyll-safe form
-      # Input examples:
-      #   ![Alt](/assets/img/pic.png)
-      #   ![Alt](/assets/img/pic.png "Title")
-      # Output:
-      #   {{ '/assets/img/pic.png' | relative_url }}
-      #   {{ '/assets/img/pic.png' | relative_url }}{: title="Title"}
-      text.gsub!(/!\[([^\]]*)\]\(\/assets\/([^)"]+)(?:\s+"([^"]*)")?\)/) do
-        alt = $1 # (not used because Liquid-in-URL breaks Markdown’s title)
-        path = $2
-        title = $3
-        if title
-          "{{ '/assets/#{path}' | relative_url }}{: title=\"#{title}\"}"
-        else
-          "{{ '/assets/#{path}' | relative_url }}"
-        end
-      end
-
-      File.write(path, text)
-    end
-    RUBY
 
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
