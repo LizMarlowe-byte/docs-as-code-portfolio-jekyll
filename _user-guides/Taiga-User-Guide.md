@@ -489,15 +489,9 @@ Review the [Scrum project workflow](#scrum-project-workflow)
   </li>
 
   <li>
-    On the following screen, enter your epic details.
+    Enter your epic details.
 	
-    ---
-	
-    ![Enter epic details](/assets/img/Taiga_epic1.png "Enter epic details")
-	
-    ---
-	
-
+   
     <table>
       <thead>
         <tr><th>Field</th><th>Description</th></tr>
@@ -525,12 +519,6 @@ Review the [Scrum project workflow](#scrum-project-workflow)
   <li>
     Select <strong>Create Epic</strong>.
     <p>The system creates the new epic and displays it in a new row on the <strong>Epics</strong> screen.</p>
-
-    ---
-
-    ![New epic created](/assets/img/Taiga_epic2.png "New epic created")
-	
-    ---
 	
     <table>
       <thead>
@@ -935,12 +923,6 @@ In Taiga, issues can be managed independently of Scrum or Kanban boards, allowin
 1. To create a new issue, select <strong>+ New Issue</strong>.
 
 1. On the <strong>New issue</strong> screen, complete the fields.
-
-    ---
-
-    ![Create new issue](/assets/img/Taiga_issue1.png "Create new issue")
-
-    ---
   
     <table>
       <thead>
@@ -960,12 +942,6 @@ In Taiga, issues can be managed independently of Scrum or Kanban boards, allowin
 1. Select <strong>Create</strong>.
 
     The new issue appears on the <strong>Issues</strong> page.</p>
-
-    ---
-
-    ![New issue](/assets/img/Taiga_issue2.png "New issue")
-
-    ---
 	
 1. To create multiple issues in bulk:
     <ol>
@@ -983,12 +959,6 @@ In Taiga, issues can be managed independently of Scrum or Kanban boards, allowin
       <li>Select either <strong>Include</strong> or <strong>Exclude</strong>.</li>
       <li>For each attribute (such as <strong>Type</strong>, <strong>Severity</strong>, <strong>Priority</strong>, <strong>Status</strong>, etc.), select the values you want.</li>
     </ol>
-	
-    ---
-
-    ![Filter issues](/assets/img/Taiga_issue3.png "Filter issues")
-
-    ---
    
   </li>
 
