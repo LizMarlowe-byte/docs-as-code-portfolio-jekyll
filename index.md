@@ -4,7 +4,7 @@ layout: default
 nav_order: 1
 ---
 
-Welcome to the third project in my **Docs‑as‑Code Portfolio Series**, where I’m building and publishing documentation sites using four different static site generators (SSGs): **MkDocs**, **Hugo**, **Docusaurus**, and **Jekyll**.
+Welcome to the third project in my **Docs‑as‑Code Portfolio Series**, where I’m building and publishing documentation sites using four different static site generators (SSGs' | relative_url }}: **MkDocs**, **Hugo**, **Docusaurus**, and **Jekyll**.
 
 This site represents my work with **Jekyll** and demonstrates how I approach modern documentation workflows—from information architecture and content strategy to build automation and publishing.
 
