@@ -3,7 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {% include meta.html %}
+
+  {%- comment -%}
+    Optional: SEO tags if you enabled jekyll-seo-tag in _config.yml
+    (plugins: [jekyll-seo-tag])
+  {%- endcomment -%}
+  {%- if site.plugins and site.plugins contains "jekyll-seo-tag" -%}
+    {%- seo -%}
+  {%- endif -%}
 
   <title>
     {% if page.title %}{{ page.title | escape }} · {% endif %}Docs Site Using Jekyll
@@ -24,7 +31,8 @@
         <a class="site-title" href="{{ '/' | relative_url }}">Docs Site Using Jekyll</a>
       </div>
       <nav class="header-nav">
-        <a href="{{ '/' | relative_url }}">About this Site</a>
+        <!-- If you actually have /about/ page, link to it; otherwise link to home -->
+        <a href="{{ '/about/' | relative_url }}">About this Site</a>
         <a href="https://github.com/LizMarlowe-byte/docs-as-code-portfolio-jekyll"
            target="_blank" rel="noopener">View on GitHub</a>
       </nav>
@@ -35,6 +43,12 @@
   <div class="layout-grid">
     <!-- Left Sidebar -->
     <aside class="sidebar">
+      {%- comment -%}
+        These includes must exist under _includes/.
+        If they don't exist yet, create empty files:
+        _includes/sidebar.html, _includes/breadcrumb.html, _includes/toc.html
+        or comment these lines out temporarily to avoid build errors.
+      {%- endcomment -%}
       {% include sidebar.html %}
     </aside>
 

@@ -1,17 +1,22 @@
 # ─────────────────────────────────────────────────────────────
 # Site metadata
 # ─────────────────────────────────────────────────────────────
-title: Docs Site Using Jekyll
-description: Technical documentation site built using modern developer workflows.
+title: "Docs Site Using Jekyll"
+description: "Technical documentation site built using modern developer workflows."
 email: ""
-url: ""                 # set to "https://<your-username>.github.io" when deploying
-baseurl: ""             # for a project site use "/docs-as-code-portfolio-jekyll"; for a user site keep ""
+url: "https://lizmarlowe-byte.github.io"           # User/Org Pages root
+baseurl: "/docs-as-code-portfolio-jekyll"          # Project Pages subpath
 
 # ─────────────────────────────────────────────────────────────
 # Theme & plugins
 # ─────────────────────────────────────────────────────────────
-theme: 
-plugins: []
+# If you're using the github-pages gem, minima is bundled. You can keep this:
+theme: minima
+
+# Only list plugins supported by GitHub Pages (safe set)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # ─────────────────────────────────────────────────────────────
 # Markdown & permalink behavior
@@ -20,12 +25,12 @@ markdown: kramdown
 kramdown:
   input: GFM            # GitHub-flavored Markdown
 permalink: pretty       # /path/ instead of /path.html
+highlighter: rouge
 
 # ─────────────────────────────────────────────────────────────
 # Collections (maps to folders: _user-guides, etc.)
 # ─────────────────────────────────────────────────────────────
 collections:
-
   user-guides:
     output: true
     permalink: /user-guides/:path/
@@ -38,8 +43,6 @@ collections:
   technical-reference-guides:
     output: true
     permalink: /reference/:path/
-
-
 
 # ─────────────────────────────────────────────────────────────
 # Defaults: apply layout + sidebar to all collection pages
