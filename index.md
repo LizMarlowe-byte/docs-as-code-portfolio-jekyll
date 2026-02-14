@@ -22,29 +22,28 @@ This portfolio series is my opportunity to:
 - Create a curated, public‑facing writing and tooling portfolio  
 
 > **Tip:**  
-> This page serves as the documentation homepage in this Jekyll version of the project.  
-> Unlike Docusaurus—where placing a file at `docs/index.md` automatically becomes the docs root—  
-> in Jekyll you can customize your landing page by choosing to name this file `index.md` instead of `about.md`.
+> This page serves as the documentation homepage in this Jekyll version of the project. 
 
 ---
 
 ## ⚙️ What I Built Using **Jekyll**
 
-### 🔧 Full Docs‑as‑Code Workflow
-- Authored content in Markdown  
-- Version control with Git  
-- Custom sidebar built using Jekyll collections  
-- Light‑only theme to match portfolio preferences  
-- Local dev environment using `bundle exec jekyll serve`  
 
-### 🚀 Automated Build & Publish
-- Local live preview during authoring  
-- Production build via `jekyll build`  
-- Deployable via GitHub Pages using GitHub Actions  
+### 🔧 Workflow & Architecture
+- Information architecture using **Jekyll collections** + custom sidebar  
+- Markdown authoring and **Git‑based reviews**  
+- **Accessibility‑minded** content (alt text, semantic headings)
+
+### 🚀 Build & Delivery
+- **GitHub Actions** pipeline (Ruby 3.1 via `ruby/setup-ruby`) with lockfile/platform normalization for Linux runners  
+- Pages‑safe asset/link handling using Jekyll URL filters to respect the `/<repo>` base path  
+- Local preview with `bundle exec jekyll serve` and production builds in CI
+
+> **Build & Hosting Notes**  
+> - This is a **GitHub Pages *project* site**, so assets/links are generated with `relative_url` to work under `/<repo>`. [1](https://www.fatlemon.co.uk/2023/12/custom-gems-with-github-pages/)  
+> - **GitHub Actions** is the recommended approach for Pages; it avoids local Windows/Jekyll issues and gives full control over Ruby/plugins. [2](https://stackoverflow.com/questions/79351017/im-getting-a-github-pages-build-error-that-i-dont-understand)
 
 ### 📚 Organized Documentation Examples
-This site includes the same structured documentation sections used in your other SSG projects:
-
 - **User Guides** → `/user-guides/`  
 - **API Guides** → `/api-guides/`  
 - **How‑To Articles** → `/how-to/`  
@@ -52,8 +51,17 @@ This site includes the same structured documentation sections used in your other
 
 ---
 
-## 🚧 What’s Next: 4‑SSG Series Roadmap
+## 🧱 Tech Stack
+- **Jekyll** for static generation (Markdown + Liquid templating) [2](https://stackoverflow.com/questions/79351017/im-getting-a-github-pages-build-error-that-i-dont-understand)  
+- **GitHub Actions** to build/deploy (recommended path for GitHub Pages) [2](https://stackoverflow.com/questions/79351017/im-getting-a-github-pages-build-error-that-i-dont-understand)  
+- **GitHub Pages** project‑site hosting; URLs generated with `relative_url` for subpath safety [1](https://www.fatlemon.co.uk/2023/12/custom-gems-with-github-pages/)
 
+**Source & CI:**  
+[Repository](https://github.com/LizMarlowe-byte/docs-as-code-portfolio-jekyll) · [Actions](https://github.com/LizMarlowe-byte/docs-as-code-portfolio-jekyll/actions)
+
+---
+
+## 🚧 What’s Next: 4‑SSG Series Roadmap
 1. **MkDocs** — ✔️ Completed  
 2. **Hugo** — Work in progress  
 3. **Docusaurus** — ✔️ Completed  
