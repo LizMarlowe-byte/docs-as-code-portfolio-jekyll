@@ -42,7 +42,7 @@ This portfolio series is my opportunity to:
 
 ### 📚 Organized Documentation Examples
 
-- [User Guides](/user-guides)
+- [User Guides](https://github.com/LizMarlowe-byte/docs-as-code-portfolio-jekyll/tree/main/_user-guides)
 - [API Guides](/api-guides)
 - [How‑To Articles](/how-to-articles)
 - [Technical Reference Guides](/technical-reference-guides)
