@@ -59,7 +59,7 @@ This portfolio series is my opportunity to:
 
 ### Technical Reference Guides
 - [AuroraOps Platform 5.2.0 Release Notes](/docs-as-code-portfolio-jekyll/reference/AuroraOps-Platform-5.2.0-Release-Notes/)
-- [Optiflow CloudSync CRM Integration Guide](/docs-as-code-portfolio-jekyll/reference/Optiflow-CloudSync-CRM-Integration-Guide/)
+- [Optiflow CloudSync CRM Integration Guide](/docs-as-code-portfolio-jekyll/reference/Optiflow_CloudSync_CRM_Integration_Guide/)
 
 ---
 
