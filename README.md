@@ -34,9 +34,6 @@ This portfolio series is my opportunity to:
 - Pages‑safe asset/link handling using Jekyll URL filters to respect the `/<repo>` base path  
 - Local preview with `bundle exec jekyll serve` and production builds in CI
 
-> **Build & Hosting Notes**  
-> - This is a **GitHub Pages *project* site**, so assets/links are generated with `relative_url` to work under `/<repo>`. [1](https://www.fatlemon.co.uk/2023/12/custom-gems-with-github-pages/)  
-> - **GitHub Actions** is the recommended approach for Pages; it avoids local Windows/Jekyll issues and gives full control over Ruby/plugins. [2](https://stackoverflow.com/questions/79351017/im-getting-a-github-pages-build-error-that-i-dont-understand)
 
 ### 📚 Organized Documentation Examples
 
