@@ -23,14 +23,13 @@ This portfolio series is my opportunity to:
 
 ## ⚙️ What I Built Using **Jekyll**
 
-
 ### 🔧 Workflow & Architecture
-- Information architecture using **Jekyll collections** + custom sidebar  
-- Markdown authoring and **Git‑based reviews**  
-- **Accessibility‑minded** content (alt text, semantic headings)
+- Information architecture using Jekyll collections + custom sidebar  
+- Markdown authoring and Git‑based reviews 
+- Accessibility‑minded content (alt text, semantic headings)
 
 ### 🚀 Build & Delivery
-- **GitHub Actions** pipeline (Ruby 3.1 via `ruby/setup-ruby`) with lockfile/platform normalization for Linux runners  
+- GitHub Actions pipeline (Ruby 3.1 via `ruby/setup-ruby`) with lockfile/platform normalization for Linux runners  
 - Pages‑safe asset/link handling using Jekyll URL filters to respect the `/<repo>` base path  
 - Local preview with `bundle exec jekyll serve` and production builds in CI
 
@@ -45,9 +44,9 @@ This portfolio series is my opportunity to:
 ---
 
 ## 🧱 Tech Stack
-- **Jekyll** for static generation (Markdown + Liquid templating) [2](https://stackoverflow.com/questions/79351017/im-getting-a-github-pages-build-error-that-i-dont-understand)  
-- **GitHub Actions** to build/deploy (recommended path for GitHub Pages) [2](https://stackoverflow.com/questions/79351017/im-getting-a-github-pages-build-error-that-i-dont-understand)  
-- **GitHub Pages** project‑site hosting; URLs generated with `relative_url` for subpath safety [1](https://www.fatlemon.co.uk/2023/12/custom-gems-with-github-pages/)
+- Jekyll for static generation (Markdown + Liquid templating) [2](https://stackoverflow.com/questions/79351017/im-getting-a-github-pages-build-error-that-i-dont-understand)  
+- GitHub Actions to build/deploy (recommended path for GitHub Pages) [2](https://stackoverflow.com/questions/79351017/im-getting-a-github-pages-build-error-that-i-dont-understand)  
+- GitHub Pages project‑site hosting; URLs generated with `relative_url` for subpath safety [1](https://www.fatlemon.co.uk/2023/12/custom-gems-with-github-pages/)
 
 **Source & CI:**  
 [Repository](https://github.com/LizMarlowe-byte/docs-as-code-portfolio-jekyll) · [Actions](https://github.com/LizMarlowe-byte/docs-as-code-portfolio-jekyll/actions)
