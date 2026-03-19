@@ -1,5 +1,5 @@
 ---
-title: Optiflow CloudSync CRM Integration Guide
+title: "Optiflow CloudSync CRM Integration Guide"
 summary: This guide describes the system integration between the Optiflow system and the CloudSync CRM system.
 nav_order: 10           # (optional) for sidebar ordering
 ---
