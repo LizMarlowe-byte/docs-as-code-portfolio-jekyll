@@ -17,10 +17,7 @@ This portfolio series is my opportunity to:
 - Explore and compare popular SSGs used in engineering teams  
 - Showcase real examples of my technical writing  
 - Build documentation sites end‑to‑end using best practices  
-- Create a curated, public‑facing writing and tooling portfolio  
-
-> **Tip:**  
-> This page serves as the documentation homepage in this Jekyll version of the project. 
+- Create a curated, public‑facing writing and tooling portfolio
 
 ---
 
