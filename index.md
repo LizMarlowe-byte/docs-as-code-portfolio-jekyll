@@ -59,14 +59,3 @@ This portfolio series is my opportunity to:
 **Source & CI:**  
 [Repository](https://github.com/LizMarlowe-byte/docs-as-code-portfolio-jekyll) · [Actions](https://github.com/LizMarlowe-byte/docs-as-code-portfolio-jekyll/actions)
 
----
-
-## 🚧 What’s Next: 4‑SSG Series Roadmap
-1. **MkDocs** — ✔️ Completed  
-2. **Hugo** — Work in progress  
-3. **Docusaurus** — ✔️ Completed  
-4. **Jekyll** — ✔️ This site
-
-At the end of the series, I’ll publish a comparative write‑up covering setup, customization, plugin ecosystems, docs‑as‑code workflows, and best use cases.
-
----
