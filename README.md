@@ -41,10 +41,11 @@ This portfolio series is my opportunity to:
 > - **GitHub Actions** is the recommended approach for Pages; it avoids local Windows/Jekyll issues and gives full control over Ruby/plugins. [2](https://stackoverflow.com/questions/79351017/im-getting-a-github-pages-build-error-that-i-dont-understand)
 
 ### 📚 Organized Documentation Examples
-- **User Guides** → `/user-guides/`  
-- **API Guides** → `/api-guides/`  
-- **How‑To Articles** → `/how-to/`  
-- **Technical Reference Guides** → `/reference/`  
+
+- [User Guides](docs/user-guides)
+- [API Guides](docs/api-guides)
+- [How‑To Articles](docs/how-to-articles)
+- [Technical Reference Guides](docs/technical-reference-guides)
 
 ---
 
