@@ -47,19 +47,19 @@ This portfolio series is my opportunity to:
 ## 📚 Organized Documentation Examples
 
 ### User Guides
-- /docs-as-code-portfolio-jekyll/user-guides/Docmost-User-Guide/
-- /docs-as-code-portfolio-jekyll/user-guides/Taiga-User-Guide/
+- [Docmost User Guide](/docs-as-code-portfolio-jekyll/user-guides/Docmost-User-Guide/)
+- [Taiga User Guide](/docs-as-code-portfolio-jekyll/user-guides/Taiga-User-Guide/)
 
 ### API Guides
-- /docs-as-code-portfolio-jekyll/api-guides/OpenWeatherMap-API-Guide/
-- /docs-as-code-portfolio-jekyll/api-guides/Spotify-API-Guide/
+- [OpenWeatherMap API Guide](/docs-as-code-portfolio-jekyll/api-guides/OpenWeatherMap-API-Guide/)
+- [Spotify API Guide](/docs-as-code-portfolio-jekyll/api-guides/Spotify-API-Guide/)
 
 ### How‑To Articles
-- /docs-as-code-portfolio-jekyll/how-to/How-to-create-a-relationship-table-in-MadCap-Flare/
+- [How to create a relationship table in MadCap Flare](/docs-as-code-portfolio-jekyll/how-to/How-to-create-a-relationship-table-in-MadCap-Flare/)
 
 ### Technical Reference Guides
-- /docs-as-code-portfolio-jekyll/reference/AuroraOps-Platform-5.2.0-Release-Notes/
-- /docs-as-code-portfolio-jekyll/reference/Optiflow_CloudSync_CRM_Integration_Guide/
+- [AuroraOps Platform 5.2.0 Release Notes](/docs-as-code-portfolio-jekyll/reference/AuroraOps-Platform-5.2.0-Release-Notes/)
+- [Optiflow CloudSync CRM Integration Guide](/docs-as-code-portfolio-jekyll/reference/Optiflow_CloudSync_CRM_Integration_Guide/)
 
 ---
 
