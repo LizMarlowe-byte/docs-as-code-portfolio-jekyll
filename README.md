@@ -44,7 +44,7 @@ This portfolio series is my opportunity to:
 
 - [User Guides](https://github.com/LizMarlowe-byte/docs-as-code-portfolio-jekyll/tree/main/_user-guides)
 - [API Guides](https://github.com/LizMarlowe-byte/docs-as-code-portfolio-jekyll/tree/main/_api-guides)
-- [How‑To Articles](/how-to-articles)
+- [How‑To Articles](https://github.com/LizMarlowe-byte/docs-as-code-portfolio-jekyll/tree/main/_how-to-articles)
 - [Technical Reference Guides](/technical-reference-guides)
 
 ---
