@@ -26,7 +26,7 @@ Using a rich text editor with built-in support for multiple diagramming tools, y
 ---
 
 
-![Docmost Home Page](/assets/img/DocMost36a.png "Docmost Home Page")
+![Docmost Home Page]({{ "/assets/img/DocMost36a.png" | relative_url }} "Docmost Home Page")
 
 
 ---
