@@ -42,7 +42,7 @@ Within a space, you can create and manage individual documents, or **_pages_**, 
 
 ---
 
-![Workspaces, spaces, and pages](/assets/img/DocMost8.png "Workspaces, spaces, and pages")
+![Workspaces, spaces, and pages]({{ "/assets/img/DocMost8.png" | relative_url }} "Workspaces, spaces, and pages")
 
 ---
 
