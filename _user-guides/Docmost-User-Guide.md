@@ -58,7 +58,7 @@ Here's what you do:
 
 ---
 
-![Example: Workspaces, spaces, and pages](/assets/img/DocMost10.png "Example: Workspaces, spaces, and pages")
+![Example: Workspaces, spaces, and pages]({{ "/assets/img/DocMost10.png" | relative_url }} "Example: Workspaces, spaces, and pages")
 
 ---
 
@@ -102,7 +102,7 @@ Set up your account for Docmost, which provides you with web-based, thin client 
 
      ---
 
-    ![Create workspace](/assets/img/DocMost2.png "Create workspace")
+    ![Create workspace]({{ "/assets/img/DocMost2.png" | relative_url }} "Create workspace")
 
     ---
 
@@ -110,7 +110,7 @@ Set up your account for Docmost, which provides you with web-based, thin client 
 
     ---
 
-    ![Default space on Docmost home screen](/assets/img/DocMost1.png "Default space on Docmost home screen")
+    ![Default space on Docmost home screen]({{ "/assets/img/DocMost1.png" | relative_url }} "Default space on Docmost home screen")
 
     ---
 
@@ -124,7 +124,7 @@ After setting up your Docmost account, define your profile settings and preferen
 
     ---
 
-    ![Select My profile](/assets/img/DocMost4.png "Select My profile")
+    ![Select My profile]({{ "/assets/img/DocMost4.png" | relative_url }} "Select My profile")
 
     ---
 
@@ -132,7 +132,7 @@ After setting up your Docmost account, define your profile settings and preferen
 
     ---
 
-    ![Update My Profile page](/assets/img/DocMost5.png "Update My Profile page")
+    ![Update My Profile page]({{ "/assets/img/DocMost5.png" | relative_url }} "Update My Profile page")
 
     ---
 
@@ -147,7 +147,7 @@ After setting up your Docmost account, define your profile settings and preferen
 
     ---
 
-    ![Select My preferences](/assets/img/DocMost6.png "Select My preferences")
+    ![Select My preferences]({{ "/assets/img/DocMost6.png" | relative_url }} "Select My preferences")
 
     ---
 
@@ -155,7 +155,7 @@ After setting up your Docmost account, define your profile settings and preferen
 
     ---
 
-    ![Update My Preferences](/assets/img/DocMost7.png "Update My Preferences")
+    ![Update My Preferences]({{ "/assets/img/DocMost7.png" | relative_url }} "Update My Preferences")
 
     ---
 
@@ -189,7 +189,7 @@ Customize the default workspace according to your needs. You can change the icon
 
     ---
 
-    ![Select Workspace settings](/assets/img/DocMost11.png "Select Workspace settings")
+    ![Select Workspace settings]({{ "/assets/img/DocMost11.png" | relative_url }} "Select Workspace settings")
 
     ---
 
@@ -197,7 +197,7 @@ Customize the default workspace according to your needs. You can change the icon
 
     ---
 
-    ![Update Workspace settings](/assets/img/DocMost13.png "Update Workspace settings")
+    ![Update Workspace settings]({{ "/assets/img/DocMost13.png" | relative_url }} "Update Workspace settings")
 
     ---
 
@@ -213,7 +213,7 @@ Customize the default workspace according to your needs. You can change the icon
 
     ---
 
-    ![View updated workspace settings](/assets/img/DocMost14.png "View updated workspace settings")
+    ![View updated workspace settings]({{ "/assets/img/DocMost14.png" | relative_url }} "View updated workspace settings")
 
     ---
 
@@ -227,7 +227,7 @@ Invite people to collaborate in your workspace. Assign the invited members to ei
 
     ---
 
-    ![Select Manage members](/assets/img/DocMost15.png "Select Manage members")
+    ![Select Manage members]({{ "/assets/img/DocMost15.png" | relative_url }} "Select Manage members")
 
     ---
 
@@ -239,7 +239,7 @@ Invite people to collaborate in your workspace. Assign the invited members to ei
 
     ---
 
-    ![Invite new members](/assets/img/DocMost16.png "Invite new members")
+    ![Invite new members]({{ "/assets/img/DocMost16.png" | relative_url }} "Invite new members")
 
     ---
 
@@ -259,7 +259,7 @@ Invite people to collaborate in your workspace. Assign the invited members to ei
 
     ---
 
-    ![View all invited members who have not yet accepted the invitation](/assets/img/DocMost17.png "View all invited members who have not yet accepted the invitation")
+    ![View all invited members who have not yet accepted the invitation]({{ "/assets/img/DocMost17.png" | relative_url }} "View all invited members who have not yet accepted the invitation")
 
     ---
 
@@ -276,7 +276,7 @@ Invite people to collaborate in your workspace. Assign the invited members to ei
 
     ---
 
-    ![View all invited members who accepted the invitation](/assets/img/DocMost19.png "View all invited members who accepted the invitation")
+    ![View all invited members who accepted the invitation]({{ "/assets/img/DocMost19.png" | relative_url }}  "View all invited members who accepted the invitation")
 
     ---
 
@@ -301,7 +301,7 @@ After sending an invitation to a member, you can resend the invitation. This is 
 
     ---
 
-    ![Resend invitation](/assets/img/DocMost25.png "Resend invitation")
+    ![Resend invitation]({{ "/assets/img/DocMost25.png" | relative_url }} "Resend invitation")
 
     ---
 
@@ -322,7 +322,7 @@ After sending an invitation to a member, you can revoke the invitation. This is 
 
     ---
 
-    ![Revoke invitation](/assets/img/DocMost26.png "Revoke invitation")
+    ![Revoke invitation]({{ "/assets/img/DocMost26.png" | relative_url }} "Revoke invitation")
 
     ---
 
@@ -345,7 +345,7 @@ You can delete a member from a workspace.
 
     ---
 
-    ![Delete member](/assets/img/DocMost27.png "Delete member")
+    ![Delete member]({{ "/assets/img/DocMost27.png" | relative_url }} "Delete member")
 
     ---
 
@@ -383,7 +383,7 @@ Within your workspace, create a new space to group together documents, permissio
 
     ---
 
-    ![Create a space](/assets/img/DocMost20.png "Create a space")
+    ![Create a space]({{ "/assets/img/DocMost20.png" | relative_url }} "Create a space")
 
     ---
 
@@ -399,7 +399,7 @@ Within your workspace, create a new space to group together documents, permissio
 
     ---
 
-    ![Space created](/assets/img/DocMost21.png "Space created")
+    ![Space created]({{ "/assets/img/DocMost21.png" | relative_url }} "Space created")
 
     ---
 
@@ -417,7 +417,7 @@ After creating a space, you can edit a space's settings.
 
     ---
 
-    ![Select space to edit settings](/assets/img/DocMost24.png "Select space to edit settings")
+    ![Select space to edit settings]({{ "/assets/img/DocMost24.png" | relative_url }} "Select space to edit settings")
 
     ---
 
@@ -429,7 +429,7 @@ After creating a space, you can edit a space's settings.
 
     ---
 
-    ![Update space settings](/assets/img/DocMost22.png "Update space settings")
+    ![Update space settings]({{ "/assets/img/DocMost22.png" | relative_url }} "Update space settings")
 
     ---
 
@@ -455,7 +455,7 @@ Add individual members to a space for collaboration. Set specific permission lev
 
     ---
 
-    ![Select space to add members](/assets/img/DocMost24.png "Select space to add members")
+    ![Select space to add members]({{ "/assets/img/DocMost24.png" | relative_url }} "Select space to add members")
 
     ---
 
@@ -467,7 +467,7 @@ Add individual members to a space for collaboration. Set specific permission lev
 
     ---
 
-    ![Add members to a space](/assets/img/DocMost23.png "Add members to a space")
+    ![Add members to a space]({{ "/assets/img/DocMost23.png" | relative_url }} "Add members to a space")
 
     ---
 
@@ -497,7 +497,7 @@ You can remove a member from a space.
 
     ---
 
-    ![Select space from which to remove a member](/assets/img/DocMost24.png "Select space from which to remove a member")
+    ![Select space from which to remove a member]({{ "/assets/img/DocMost24.png" | relative_url }} "Select space from which to remove a member")
 
     ---
 
@@ -507,7 +507,7 @@ You can remove a member from a space.
 
     ---
 
-    ![Remove member from space](/assets/img/DocMost28.png "Remove member from space")
+    ![Remove member from space]({{ "/assets/img/DocMost28.png" | relative_url }} "Remove member from space")
 
     ---
 
@@ -530,7 +530,7 @@ You can export a space in both Markdown and HTML formats for backup, migration, 
 
     ---
 
-    ![Select space to export](/assets/img/DocMost24.png "Select space to export")
+    ![Select space to export]({{ "/assets/img/DocMost24.png" | relative_url }} "Select space to export")
 
     ---
 
@@ -540,7 +540,7 @@ You can export a space in both Markdown and HTML formats for backup, migration, 
 
     ---
 
-    ![Select Export](/assets/img/DocMost29a.png "Select Export")
+    ![Select Export]({{ "/assets/img/DocMost29a.png" | relative_url }} "Select Export")
 
     ---
 
@@ -548,7 +548,7 @@ You can export a space in both Markdown and HTML formats for backup, migration, 
 
     ---
 
-    ![Select Export Space options](/assets/img/DocMost30a.png "Select Export Space options")
+    ![Select Export Space options]({{ "/assets/img/DocMost30a.png" | relative_url }} "Select Export Space options")
 
     ---
 
@@ -581,7 +581,7 @@ For example, you created a space for a small group of members and they have merg
 
     ---
 
-    ![Select space to delete](/assets/img/DocMost24.png "Select space to delete")
+    ![Select space to delete]({{ "/assets/img/DocMost24.png" | relative_url }} "Select space to delete")
 
     ---
 
@@ -591,7 +591,7 @@ For example, you created a space for a small group of members and they have merg
 
     ---
 
-    ![Select Delete](/assets/img/DocMost31.png "Select Delete")
+    ![Select Delete]({{ "/assets/img/DocMost31.png" | relative_url }} "Select Delete")
 
     ---
 
@@ -632,7 +632,7 @@ Create a group to manage user permissions for multiple users simultaneously.
 
     ---
 
-    ![Create group](/assets/img/DocMost47.png "Create group")
+    ![Create group]({{ "/assets/img/DocMost47.png" | relative_url }} "Create group")
 
     ---
 
@@ -648,7 +648,7 @@ Create a group to manage user permissions for multiple users simultaneously.
 
     ---
 
-    ![Group created](/assets/img/DocMost48.png "Group created")
+    ![Group created]({{ "/assets/img/DocMost48.png" | relative_url }} "Group created")
 
     ---
 
@@ -668,7 +668,7 @@ After creating a group, you can edit the group's name and description. This is h
 
     ---
 
-    ![Edit group](/assets/img/DocMost49.png "Edit group")
+    ![Edit group]({{ "/assets/img/DocMost49.png" | relative_url }} "Edit group")
 
     ---
 
@@ -676,7 +676,7 @@ After creating a group, you can edit the group's name and description. This is h
 
     ---
 
-    ![Edit group name and description](/assets/img/DocMost50.png "Edit group name and description")
+    ![Edit group name and description]({{ "/assets/img/DocMost50.png" | relative_url }} "Edit group name and description")
 
     ---
 
@@ -702,7 +702,7 @@ Assign a specific set of permissions to the entire group. Groups make it easy to
 
     ---
 
-    ![Add space members](/assets/img/DocMost51.png "Add space members")
+    ![Add space members]({{ "/assets/img/DocMost51.png" | relative_url }} "Add space members")
 
     ---
 
@@ -717,7 +717,7 @@ Assign a specific set of permissions to the entire group. Groups make it easy to
 
     ---
 
-    ![Group added as a space member](/assets/img/DocMost52.png "Group added as a space member")
+    ![Group added as a space member]({{ "/assets/img/DocMost52.png" | relative_url }} "Group added as a space member")
 
     ---
 
@@ -743,7 +743,7 @@ After creating a group, you can easily add a member to the group.
 
     ---
 
-    ![Add group member](/assets/img/DocMost53.png "Add group member")
+    ![Add group member]({{ "/assets/img/DocMost53.png" | relative_url }} "Add group member")
 
     ---
 
@@ -767,7 +767,7 @@ If needed, you can easily remove a member from the group.
 
     ---
 
-    ![Remove group member](/assets/img/DocMost54.png "Remove group member")
+    ![Remove group member]({{ "/assets/img/DocMost54.png" | relative_url }} "Remove group member")
 
     ---
 
@@ -791,7 +791,7 @@ If needed, you can delete a group.
 
     ---
 
-    ![Delete group](/assets/img/DocMost55.png "Delete group")
+    ![Delete group]({{ "/assets/img/DocMost55.png" | relative_url }}  "Delete group")
 
     ---
 
@@ -825,7 +825,7 @@ Create a page, which contains content within a space. For example, for the _Huma
 
     ---
 
-    ![Select space to create a page](/assets/img/DocMost32.png "Select space to create a page")
+    ![Select space to create a page]({{ "/assets/img/DocMost32.png" | relative_url }} "Select space to create a page")
 
     ---
 
@@ -833,7 +833,7 @@ Create a page, which contains content within a space. For example, for the _Huma
 
     ---
 
-    ![New page](/assets/img/DocMost33.png "New page")
+    ![New page]({{ "/assets/img/DocMost33.png" | relative_url }} "New page")
 
     ---
 
@@ -845,7 +845,7 @@ Create a page, which contains content within a space. For example, for the _Huma
 
     ---
 
-    ![Add content to the page](/assets/img/DocMost34.png "Add content to the page")
+    ![Add content to the page]({{ "/assets/img/DocMost34.png" | relative_url }} "Add content to the page")
 
     ---
 
@@ -853,7 +853,7 @@ Create a page, which contains content within a space. For example, for the _Huma
 
     ---
 
-    ![Manage the page](/assets/img/DocMost35b.png "Manage the page")
+    ![Manage the page]({{ "/assets/img/DocMost35b.png" | relative_url }} "Manage the page")
 
     ---
 
@@ -881,7 +881,7 @@ You can easily move a page to a different space. This is helpful if the content 
 
     ---
 
-    ![Move the page](/assets/img/DocMost37.png "Move the page")
+    ![Move the page]({{ "/assets/img/DocMost37.png" | relative_url }} "Move the page")
 
     ---
 
@@ -889,7 +889,7 @@ You can easily move a page to a different space. This is helpful if the content 
 
     ---
 
-    ![Select the space to move the page](/assets/img/DocMost38.png "Select the space to move the page")
+    ![Select the space to move the page]({{ "/assets/img/DocMost38.png" | relative_url }} "Select the space to move the page")
 
     ---
 
@@ -909,7 +909,7 @@ You can easily copy a page to a different space. This allows you to include the 
 
     ---
 
-    ![Copy to space](/assets/img/DocMost39.png "Copy to space")
+    ![Copy to space]({{ "/assets/img/DocMost39.png" | relative_url }} "Copy to space")
 
     ---
 
@@ -917,7 +917,7 @@ You can easily copy a page to a different space. This allows you to include the 
 
     ---
 
-    ![Select the space to copy the page](/assets/img/DocMost40.png "Select the space to copy the page")
+    ![Select the space to copy the page]({{ "/assets/img/DocMost40.png" | relative_url }} "Select the space to copy the page")
 
     ---
 
@@ -937,7 +937,7 @@ You can duplicate a page to the same space. This is helpful if you want to creat
 
     ---
 
-    ![Duplicate page](/assets/img/DocMost41.png "Duplicate page")
+    ![Duplicate page]({{ "/assets/img/DocMost41.png" | relative_url }} "Duplicate page")
 
     ---
 
@@ -945,7 +945,7 @@ You can duplicate a page to the same space. This is helpful if you want to creat
 
     ---
 
-    ![Copy page to the same space](/assets/img/DocMost42.png "Copy page to the same space")
+    ![Copy page to the same space]({{ "/assets/img/DocMost42.png" | relative_url }} "Copy page to the same space")
 
     ---
 
@@ -961,7 +961,7 @@ You can import pages to a specific space in HTML and Markdown formats. You can a
 
     ---
 
-    ![Import pages](/assets/img/DocMost45.png "Import pages")
+    ![Import pages]({{ "/assets/img/DocMost45.png" | relative_url }} "Import pages")
 
     ---
 
@@ -979,7 +979,7 @@ You can import pages to a specific space in HTML and Markdown formats. You can a
 
     ---
 
-    ![Upload file](/assets/img/DocMost46.png "Upload file")
+    ![Upload file]({{ "/assets/img/DocMost46.png" | relative_url }} "Upload file")
 
     ---
 
@@ -999,7 +999,7 @@ You can export a page in either Markdown or HTML format for external use. You ca
 
     ---
 
-    ![Export page](/assets/img/DocMost43.png "Export page")
+    ![Export page]({{ "/assets/img/DocMost43.png" | relative_url }} "Export page")
 
     ---
 
@@ -1007,7 +1007,7 @@ You can export a page in either Markdown or HTML format for external use. You ca
 
     ---
 
-    ![Select options for exported page](/assets/img/DocMost44.png "Select options for exported page")
+    ![Select options for exported page]({{ "/assets/img/DocMost44.png" | relative_url }} "Select options for exported page")
 
     ---
 
