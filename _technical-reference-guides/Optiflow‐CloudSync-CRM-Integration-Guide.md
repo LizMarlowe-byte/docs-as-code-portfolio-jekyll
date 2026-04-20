@@ -57,7 +57,7 @@ The following diagram illustrates this data flow, and the accompanying table des
 
 ---
 
-![Optiflow–CloudSync integration data flow](/assets/img/Optiflow_CloudSync_Integration_flow.png "Optiflow–CloudSync integration data flow")
+![Optiflow–CloudSync integration data flow]({{ "/assets/img/Optiflow_CloudSync_Integration_flow.png" | relative_url }} "Optiflow–CloudSync integration data flow")
 
 ---
 
