@@ -25,7 +25,7 @@ As Taiga offers robust customization options, you can easily configure and custo
 
 ---
 
-![Taiga overview](/assets/img/Taiga_overview.png "Taiga overview")
+![Taiga overview]({{ "/assets/img/Taiga_overview.png" | relative_url }} "Taiga overview")
 
 --- 
 
@@ -42,7 +42,7 @@ There are two main types of deployment options:
 
 ---
 
-![Taiga Cloud deployments](/assets/img/Taiga_Cloud.png "Taiga Cloud deployments")
+![Taiga Cloud deployments]({{ "/assets/img/Taiga_Cloud.png" | relative_url }} "Taiga Cloud deployments")
 
 ---
 
@@ -56,7 +56,7 @@ There are two main types of deployment options:
 
 ---
 
-![Taiga Self-hosted deployments](/assets/img/Taiga_Self_hosted.png "Taiga Self-hosted deployments")
+![Taiga Self-hosted deployments]({{ "/assets/img/Taiga_Self_hosted.png" | relative_url }} "Taiga Self-hosted deployments")
 
 ---
 
@@ -102,7 +102,7 @@ Create your account using the Taiga Cloud Basic deployment option.
 
     ---
 
-    ![Create your Taiga account](/assets/img/Taiga1.png "Create your Taiga account")
+    ![Create your Taiga account]({{ "/assets/img/Taiga1.png" | relative_url }}  "Create your Taiga account")
 
     ---
 
@@ -134,7 +134,7 @@ You can create a Scrum or Kanban project. You can also copy an existing project 
 
     ---
 
-    ![Select new project](/assets/img/Taiga2.png "Select new project")
+    ![Select new project]({{ "/assets/img/Taiga2.png" | relative_url }} "Select new project")
 
     ---
 
@@ -144,7 +144,7 @@ You can create a Scrum or Kanban project. You can also copy an existing project 
 
     ---
 
-    ![Create project](/assets/img/Taiga3.png "Create project")
+    ![Create project]({{ "/assets/img/Taiga3.png" | relative_url }} "Create project")
 
     ---
 
@@ -161,7 +161,7 @@ You can create a Scrum or Kanban project. You can also copy an existing project 
 
     ---
 
-    ![Enter project details](/assets/img/Taiga4.png "Enter project details")
+    ![Enter project details]({{ "/assets/img/Taiga4.png" | relative_url }} "Enter project details")
 
     ---
 
@@ -178,7 +178,7 @@ You can create a Scrum or Kanban project. You can also copy an existing project 
 
     ---
 
-    ![New project created](/assets/img/Taiga5.png "New project created")
+    ![New project created]({{ "/assets/img/Taiga5.png" | relative_url }} "New project created")
 
     ---
 
@@ -219,7 +219,7 @@ Update existing project settings (such as name, description, logo, owner, and pu
 
     ---
 
-    ![Update project details](/assets/img/Taiga_settings_1.png "Update project details")
+    ![Update project details]({{ "/assets/img/Taiga_settings_1.png" | relative_url }} "Update project details")
 
     ---
 
@@ -261,7 +261,7 @@ Add new members whom you want to contribute to your project. Typically, this inc
 
     ---
 
-    ![Select + New Member](/assets/img/Taiga6.png "Select + New Member")
+    ![Select + New Member]({{ "/assets/img/Taiga6.png" | relative_url }} "Select + New Member")
 
     ---
 
@@ -271,7 +271,7 @@ Add new members whom you want to contribute to your project. Typically, this inc
 
     ---
 
-    ![Enter role for new member](/assets/img/Taiga9.png "Enter role for new member")
+    ![Enter role for new member]({{ "/assets/img/Taiga9.png" | relative_url }}  "Enter role for new member")
 
     ---
 
@@ -279,7 +279,7 @@ Add new members whom you want to contribute to your project. Typically, this inc
 
     ---
 
-    ![Invite new member](/assets/img/Taiga10.png "Invite new member")
+    ![Invite new member]({{ "/assets/img/Taiga10.png" | relative_url }} "Invite new member")
 
     ---
 
@@ -289,7 +289,7 @@ Add new members whom you want to contribute to your project. Typically, this inc
 
     ---
 
-    ![Pending member](/assets/img/Taiga11.png "Pending member")
+    ![Pending member]({{ "/assets/img/Taiga11.png" | relative_url }} "Pending member")
 
     ---
 
@@ -299,7 +299,7 @@ Add new members whom you want to contribute to your project. Typically, this inc
 
     ---
 
-    ![Active members](/assets/img/Taiga_manage_members.png "Active members")
+    ![Active members]({{ "/assets/img/Taiga_manage_members.png" | relative_url }}  "Active members")
 
     ---
 
@@ -323,7 +323,7 @@ Role permissions help control who can create, edit, or delete Agile entities, su
 
     ---
 
-    ![Select role to update permissions](/assets/img/Taiga_permissions1.png "Select role to update permissions")
+    ![Select role to update permissions]({{ "/assets/img/Taiga_permissions1.png" | relative_url }} "Select role to update permissions")
 
     ---
 
@@ -331,7 +331,7 @@ Role permissions help control who can create, edit, or delete Agile entities, su
 
     ---
 
-    ![Update permissions for role](/assets/img/Taiga_permissions2.png "Update permissions for role")
+    ![Update permissions for role]({{ "/assets/img/Taiga_permissions2.png" | relative_url }} "Update permissions for role")
 
     ---
 
@@ -360,7 +360,7 @@ When creating a new Agile entity in Taiga (such as an epic, user story, or task)
 
     ---
 
-    ![Select custom fields](/assets/img/Taiga_custom_fields1.png "Select custom fields")
+    ![Select custom fields]({{ "/assets/img/Taiga_custom_fields1.png" | relative_url }} "Select custom fields")
 
     ---
 
@@ -368,7 +368,7 @@ When creating a new Agile entity in Taiga (such as an epic, user story, or task)
 
     ---
 
-    ![Add custom field](/assets/img/Taiga_custom_fields3.png "Add custom field")
+    ![Add custom field]({{ "/assets/img/Taiga_custom_fields3.png" | relative_url }} "Add custom field")
 
     ---
 
@@ -388,7 +388,7 @@ When creating a new Agile entity in Taiga (such as an epic, user story, or task)
 
     ---
 
-    ![Edit or delete custom field](/assets/img/Taiga_custom_fields4.png "Edit or delete custom field")
+    ![Edit or delete custom field]({{ "/assets/img/Taiga_custom_fields4.png" | relative_url }} "Edit or delete custom field")
 
     ---
 
@@ -408,7 +408,7 @@ For example, you might want to add an issue type that is related to work that is
 
     ---
 
-    ![Select types](/assets/img/Taiga_issue_types1.png "Select types")
+    ![Select types]({{ "/assets/img/Taiga_issue_types1.png" | relative_url }} "Select types")
 
     ---
 
@@ -424,7 +424,7 @@ For example, you might want to add an issue type that is related to work that is
 
     ---
 
-    ![Save issue type](/assets/img/Taiga_issue_types2.png "Save issue type")
+    ![Save issue type]({{ "/assets/img/Taiga_issue_types2.png" | relative_url }} "Save issue type")
 
     ---
 
@@ -438,7 +438,7 @@ In Scrum, work typically moves through two main phases:
 
 ---
 
-![Scrum project workflow](/assets/img/Taiga_scrum_project_workflow_new.png "Scrum project workflow")
+![Scrum project workflow]({{ "/assets/img/Taiga_scrum_project_workflow_new.png" | relative_url }} "Scrum project workflow")
 
 ---
 
@@ -560,7 +560,7 @@ For example, in the epic called _User Management Accessibility Redesign_, create
 
     ---
 
-    ![Select related user stories from epic](/assets/img/Taiga_userstory1.png "Select related user stories from epic")
+    ![Select related user stories from epic]({{ "/assets/img/Taiga_userstory1.png" | relative_url }} "Select related user stories from epic")
 
     ---
 
@@ -568,7 +568,7 @@ For example, in the epic called _User Management Accessibility Redesign_, create
 
     ---
 
-    ![Enter new story details](/assets/img/Taiga_userstory2.png "Enter new story details")
+    ![Enter new story details]({{ "/assets/img/Taiga_userstory2.png" | relative_url }} "Enter new story details")
 
     ---
 
@@ -584,7 +584,7 @@ For example, in the epic called _User Management Accessibility Redesign_, create
 
     ---
 
-    ![New story created](/assets/img/Taiga_userstory3.png "New story created")
+    ![New story created]({{ "/assets/img/Taiga_userstory3.png" | relative_url }} "New story created")
 
     ---
 
@@ -592,7 +592,7 @@ For example, in the epic called _User Management Accessibility Redesign_, create
 
     ---
 
-    ![Add story details](/assets/img/Taiga_storydetails_updated.png "Add story details")
+    ![Add story details]({{ "/assets/img/Taiga_storydetails_updated.png" | relative_url }} "Add story details")
 
     ---
 
@@ -627,7 +627,7 @@ For example, for the user story, _Change UI Labels_, there are 3 tasks: _Propose
 
     ---
 
-    ![Select to create a new task](/assets/img/Taiga_task1.png "Select to create a new task")
+    ![Select to create a new task]({{ "/assets/img/Taiga_task1.png" | relative_url }} "Select to create a new task")
 
     ---
 
@@ -641,7 +641,7 @@ For example, for the user story, _Change UI Labels_, there are 3 tasks: _Propose
 
         ---
 
-        ![Select assigned user](/assets/img/Taiga_task2.png "Select assigned user")
+        ![Select assigned user]({{ "/assets/img/Taiga_task2.png" | relative_url }} "Select assigned user")
 
         ---
 
@@ -649,7 +649,7 @@ For example, for the user story, _Change UI Labels_, there are 3 tasks: _Propose
 
     ---
 
-    ![Save new task](/assets/img/Taiga_task4.png "Save new task")
+    ![Save new task]({{ "/assets/img/Taiga_task4.png" | relative_url }} "Save new task")
 
     ---
 
@@ -657,7 +657,7 @@ For example, for the user story, _Change UI Labels_, there are 3 tasks: _Propose
 
     ---
 
-    ![New task created](/assets/img/Taiga_task3.png "New task created")
+    ![New task created]({{ "/assets/img/Taiga_task3.png" | relative_url }} "New task created")
 
     ---
 
@@ -665,7 +665,7 @@ For example, for the user story, _Change UI Labels_, there are 3 tasks: _Propose
 
     ---
 
-    ![Additional tasks created](/assets/img/Taiga_userstory4.png "Additional tasks created")
+    ![Additional tasks created]({{ "/assets/img/Taiga_userstory4.png" | relative_url }} "Additional tasks created")
 
 
 **What to do next?**
@@ -698,19 +698,19 @@ Complete all steps in [Scrum backlog management](#scrum-backlog-management).
 
     The backlog displays all existing user stories.
 
-    ![User stories in the backlog](/assets/img/Taiga_sprints1.png "User stories in the backlog")
+    ![User stories in the backlog]({{ "/assets/img/Taiga_sprints1.png" | relative_url }} "User stories in the backlog")
 
 1. From **Sprints**, select **Add +**.
 
 1. On the **New sprint** screen, enter the name of the sprint and the start and end dates, and select **Save**.
 
-    ![Create new sprint](/assets/img/Taiga_sprints2.png "Create new sprint")
+    ![Create new sprint]({{ "/assets/img/Taiga_sprints2.png" | relative_url }} "Create new sprint")
 
 1. Select **Save**.
 
     Under **Sprints**, the new sprint is now displayed.
 
-    ![New sprint created](/assets/img/Taiga_sprints3.png "New sprint created")
+    ![New sprint created]({{ "/assets/img/Taiga_sprints3.png" | relative_url }} "New sprint created")
 
 **What to do next?**
 
@@ -736,7 +736,7 @@ From the backlog, according to deployment priorities, related work, and developm
 
       ---
 
-     ![Move stories to sprint](/assets/img/Taiga_assign_user_stories_to_sprints1.png "Move stories to sprint")
+     ![Move stories to sprint]({{ "/assets/img/Taiga_assign_user_stories_to_sprints1.png" | relative_url }} "Move stories to sprint")
 
      --- 
 
@@ -744,7 +744,7 @@ From the backlog, according to deployment priorities, related work, and developm
 
      ---
 
-     ![Stories assigned to sprint](/assets/img/Taiga_assign_user_stories_to_sprints2.png "Stories assigned to sprint")
+     ![Stories assigned to sprint]({{ "/assets/img/Taiga_assign_user_stories_to_sprints2.png" | relative_url }} "Stories assigned to sprint")
 
      --- 
 
@@ -774,7 +774,7 @@ During the daily standups, discuss any blockers, issues, and dependencies, and t
 
     ---
 
-    ![Select sprint taskboard](/assets/img/Taiga_trackprogress1.png "Select sprint taskboard")
+    ![Select sprint taskboard]({{ "/assets/img/Taiga_trackprogress1.png" | relative_url }} "Select sprint taskboard")
 
     --- 
 
@@ -784,7 +784,7 @@ During the daily standups, discuss any blockers, issues, and dependencies, and t
 
     ---
 
-    ![View sprint taskboard](/assets/img/Taiga_trackprogress2.png "View sprint taskboard")
+    ![View sprint taskboard]({{ "/assets/img/Taiga_trackprogress2.png" | relative_url }} "View sprint taskboard")
 
     --- 
 
@@ -804,7 +804,7 @@ During the daily standups, discuss any blockers, issues, and dependencies, and t
 
     ---
 
-    ![Show burn-down chart](/assets/img/Taiga_trackprogress3.png "Show burn-down chart")
+    ![Show burn-down chart]({{ "/assets/img/Taiga_trackprogress3.png" | relative_url }} "Show burn-down chart")
 
     --- 
 
@@ -812,7 +812,7 @@ During the daily standups, discuss any blockers, issues, and dependencies, and t
 
     ---
 
-    ![Add more story tasks](/assets/img/Taiga_trackprogress4.png "Add more story tasks")
+    ![Add more story tasks]({{ "/assets/img/Taiga_trackprogress4.png" | relative_url }} "Add more story tasks")
 
     --- 
 
@@ -828,7 +828,7 @@ During the daily standups, discuss any blockers, issues, and dependencies, and t
 
      ---
 
-     ![Manage issues](/assets/img/Taiga_trackprogress6.png "Manage issues")
+     ![Manage issues]({{ "/assets/img/Taiga_trackprogress6.png" | relative_url }} "Manage issues")
 
      --- 
 
@@ -836,7 +836,7 @@ During the daily standups, discuss any blockers, issues, and dependencies, and t
 
     ---
 
-    ![Closed issues](/assets/img/Taiga_trackprogress7.png "Closed issues")
+    ![Closed issues]({{ "/assets/img/Taiga_trackprogress7.png" | relative_url }}  "Closed issues")
 
     --- 
 
@@ -868,7 +868,7 @@ Kanban is a high-level workflow-based Agile software development methodology for
 
     ---
 
-    ![Create new user story](/assets/img/Taiga_kanban1.png "Create new user story")
+    ![Create new user story]({{ "/assets/img/Taiga_kanban1.png" | relative_url }} "Create new user story")
 
     --- 
 
@@ -886,7 +886,7 @@ Kanban is a high-level workflow-based Agile software development methodology for
 
     ---
 
-    ![New user story created in status swim lane](/assets/img/Taiga_kanban3.png "New user story created in status swim lane")
+    ![New user story created in status swim lane]({{ "/assets/img/Taiga_kanban3.png" | relative_url }} "New user story created in status swim lane")
 
     --- 
 
@@ -904,7 +904,7 @@ Kanban is a high-level workflow-based Agile software development methodology for
 
      ---
 
-     ![Kanban board](/assets/img/Taiga_kanban2.png "Kanban board")
+     ![Kanban board]({{ "/assets/img/Taiga_kanban2.png" | relative_url }} "Kanban board")
 
      --- 
  
@@ -973,7 +973,7 @@ In Taiga, the team board can be utilized for any project type to display team me
 
     ---
 
-    ![Team board](/assets/img/Taiga_team1.png "Team board")
+    ![Team board]({{ "/assets/img/Taiga_team1.png" | relative_url }} "Team board")
 
     --- 
 
@@ -992,7 +992,7 @@ In Taiga, the team board can be utilized for any project type to display team me
 
     ---
 
-    ![Filter team members by role](/assets/img/Taiga_team2.png "Filter team members by role")
+    ![Filter team members by role]({{ "/assets/img/Taiga_team2.png" | relative_url }}  "Filter team members by role")
 
     --- 
 
@@ -1002,7 +1002,7 @@ In Taiga, the team board can be utilized for any project type to display team me
 
     ---
 
-    ![View team member details](/assets/img/Taiga_team3.png "View team member details")
+    ![View team member details]({{ "/assets/img/Taiga_team3.png" | relative_url }} "View team member details")
 
     --- 
 
