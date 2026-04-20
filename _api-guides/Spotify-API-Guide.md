@@ -61,7 +61,7 @@ Spotify implements the [OAuth2](https://datatracker.ietf.org/doc/html/rfc6749) s
 
 ---
 
-![Spotify OAuth flow](/assets/img/Spotify_OAuth_flow_new.png "Spotify OAuth flow")
+![Spotify OAuth flow]({{ "/assets/img/Spotify_OAuth_flow_new.png" | relative_url }} "Spotify OAuth flow")
 
 ---
 
@@ -152,7 +152,7 @@ Complete the [getting started](#getting-started) tasks:
 
 ---
 
-![Add user to authenticate with your app](/assets/img/Spotify_7.png "Add user to authenticate with your app")
+![Add user to authenticate with your app]({{ "/assets/img/Spotify_7.png" | relative_url }} "Add user to authenticate with your app")
 
 ---
 
@@ -160,7 +160,7 @@ The user you added can now authenticate with your app. You can define a total of
 
 ---
 
-![Authenticated user added](/assets/img/Spotify_8.png "Authenticated user added")
+![Authenticated user added]({{ "/assets/img/Spotify_8.png" | relative_url }} "Authenticated user added")
 
 ---
 
@@ -200,7 +200,7 @@ To apply for this mode, your business or organization first needs to be an appro
 
     ---
 
-    ![Quota Extension Request Form](/assets/img/Spotify_9.png "Quota Extension Request Form")
+    ![Quota Extension Request Form]({{ "/assets/img/Spotify_9.png" | relative_url }} "Quota Extension Request Form")
 
     ---
 
@@ -360,7 +360,7 @@ Set up your Spotify Web API account on the Spotify Developer Dashboard.
 
 ---
 
-![New account on the Spotify Dashboard page](/assets/img/Spotify_1.png "New account on the Spotify Dashboard page")
+![New account on the Spotify Dashboard page]({{ "/assets/img/Spotify_1.png" | relative_url }} "New account on the Spotify Dashboard page")
 
 ---
 
@@ -382,7 +382,7 @@ An app provides the _client ID_ and _client secret_ you need to request an acces
 
     ---
 
-    ![Create New App - Add Redirect URIs](/assets/img/Spotify_2.png "Create New App - Add Redirect URIs")
+    ![Create New App - Add Redirect URIs]({{ "/assets/img/Spotify_2.png" | relative_url }} "Create New App - Add Redirect URIs")
 
     ---
 
@@ -399,7 +399,7 @@ An app provides the _client ID_ and _client secret_ you need to request an acces
 
     ---
 
-    ![Save New App Settings](/assets/img/Spotify_3.png "Save New App Settings")
+    ![Save New App Settings]({{ "/assets/img/Spotify_3.png" | relative_url }} "Save New App Settings")
 
     ---
 
@@ -409,7 +409,7 @@ An app provides the _client ID_ and _client secret_ you need to request an acces
     ---
 
 
-    ![New App Created](/assets/img/Spotify_4.png "New App Created")
+    ![New App Created]({{ "/assets/img/Spotify_4.png" | relative_url }} "New App Created")
 
 
     ---
@@ -441,7 +441,7 @@ You can now request an _access token_, which is a string that contains the crede
     ---
 
 
-    ![Select new app from dashboard](/assets/img/Spotify_5.png "Select new app from dashboard")
+    ![Select new app from dashboard]({{ "/assets/img/Spotify_5.png" | relative_url }} "Select new app from dashboard")
 
 
     ---
@@ -455,7 +455,7 @@ You can now request an _access token_, which is a string that contains the crede
     ---
 
 
-    ![View client ID and client secret](/assets/img/Spotify_6.png "View client ID and client secret")
+    ![View client ID and client secret]({{ "/assets/img/Spotify_6.png" | relative_url }} "View client ID and client secret")
 
 
     ---
