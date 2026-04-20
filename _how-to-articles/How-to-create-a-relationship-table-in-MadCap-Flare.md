@@ -82,9 +82,9 @@ From Project Organizer, add a new relationship table.
 
 2. From **Project**, right-click the **Advanced** folder and select **Add Relationship Table**.
 
-    ---
+   ---
 
-    ![Add relationship table](/assets/img/Create_rel_table2.png "Add relationship table")
+    ![Add relationship table]({{ "/assets/img/Create_rel_table2.png" | relative_url }} "Add relationship table")
 
     ---
 
@@ -98,7 +98,7 @@ From Project Organizer, add a new relationship table.
 
     ---
 
-    ![Add file](/assets/img/Create_rel_table3.png "Add file")
+    ![Add file]({{ "/assets/img/Create_rel_table3.png" | relative_url }} "Add file")
 
     ---
 
@@ -106,7 +106,7 @@ From Project Organizer, add a new relationship table.
 
     ---
 
-    ![Relationship table added](/assets/img/Create_rel_table4.png "Relationship table added")
+    ![Relationship table added]({{ "/assets/img/Create_rel_table4.png" | relative_url }} "Relationship table added")
 
     ---
   
@@ -118,7 +118,7 @@ To easily move the topics from your TOC to your relationship table, move your TO
 
     ---
 
-    ![Click and drag your TOC](/assets/img/Create_rel_table5.png "Click and drag your TOC")
+    ![Click and drag your TOC]({{ "/assets/img/Create_rel_table5.png" | relative_url }} "Click and drag your TOC")
 
     ---
 
@@ -126,7 +126,7 @@ To easily move the topics from your TOC to your relationship table, move your TO
 
     ---
 
-    ![Place TOC in shaded square](/assets/img/Create_rel_table6.png "Place TOC in shaded square")
+    ![Place TOC in shaded square]({{ "/assets/img/Create_rel_table6.png" | relative_url }} "Place TOC in shaded square")
 
     ---
 
@@ -134,7 +134,7 @@ To easily move the topics from your TOC to your relationship table, move your TO
 
     ---
 
-    ![Navigate to chapter in TOC](/assets/img/Create_rel_table7.png "Navigate to chapter in TOC")
+    ![Navigate to chapter in TOC]({{ "/assets/img/Create_rel_table7.png" | relative_url }} "Navigate to chapter in TOC")
 
     ---
 
@@ -146,7 +146,7 @@ Create the first row in your relationship table.
 
     ---
 
-    ![Select Row Properties](/assets/img/Create_rel_table8.png "Select Row Properties")
+    ![Select Row Properties]({{ "/assets/img/Create_rel_table8.png" | relative_url }} "Select Row Properties")
 
     ---
 
@@ -154,7 +154,7 @@ Create the first row in your relationship table.
 
     ---
 
-    ![Enter row name](/assets/img/Create_rel_table9.png "Enter row name")
+    ![Enter row name]({{ "/assets/img/Create_rel_table9.png" | relative_url }} "Enter row name")
 
     ---
 
@@ -162,7 +162,7 @@ Create the first row in your relationship table.
 
     ---
 
-    ![Row created](/assets/img/Create_rel_table10.png "Row created")
+    ![Row created]({{ "/assets/img/Create_rel_table10.png" | relative_url }} "Row created")
 
     ---
 
@@ -186,7 +186,7 @@ From your TOC, drag and drop the relevant topics to the row in your relationship
 
     ---
 
-    ![Drag and drop topics](/assets/img/Create_rel_table11.png "Drag and drop topics")
+    ![Drag and drop topics]({{ "/assets/img/Create_rel_table11.png" | relative_url }} "Drag and drop topics")
 
     ---
 
@@ -198,7 +198,7 @@ By default, _different_ topic types in the same row in your relationship table w
 
     ---
 
-    ![Select Cell Properties](/assets/img/Create_rel_table12.png "Select Cell Properties")
+    ![Select Cell Properties]({{ "/assets/img/Create_rel_table12.png" | relative_url }} "Select Cell Properties")
 
     ---
 
@@ -206,7 +206,7 @@ By default, _different_ topic types in the same row in your relationship table w
 
     ---
 
-    ![Select Family for collection type](/assets/img/Create_rel_table13.png "Select Family for collection type")
+    ![Select Family for collection type]({{ "/assets/img/Create_rel_table13.png" | relative_url }} "Select Family for collection type")
 
     ---
 
@@ -216,7 +216,7 @@ By default, _different_ topic types in the same row in your relationship table w
 
     ---
 
-    ![Family connection between topics](/assets/img/Create_rel_table14.png "Family connection between topics")
+    ![Family connection between topics]({{ "/assets/img/Create_rel_table14.png" | relative_url }} "Family connection between topics")
 
     ---
 
@@ -242,7 +242,7 @@ Add all relevant topics to your relationship table. In addition, add your relati
 
     ---
 
-    ![Insert relationship table snippet in topics](/assets/img/Create_rel_table15.png "Insert relationship table snippet in topics")
+    ![Insert relationship table snippet in topics]({{ "/assets/img/Create_rel_table15.png" | relative_url }} "Insert relationship table snippet in topics")
 
     ---
 
@@ -252,7 +252,7 @@ Add all relevant topics to your relationship table. In addition, add your relati
 
     ---
 
-    ![Select relationship table for targets](/assets/img/Create_rel_table16.png "Select relationship table for targets")
+    ![Select relationship table for targets]({{ "/assets/img/Create_rel_table16.png" | relative_url }} "Select relationship table for targets")
 
     ---
 
