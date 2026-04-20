@@ -32,7 +32,7 @@ This example shows a relationship table for a _Getting Started_ chapter, with co
 
 ---
 
-![Relationship table concept](/assets/img/Create_rel_table1ab.png "Relationship table concept")
+![Relationship table concept]({{ "/assets/img/Create_rel_table1ab.png" | relative_url }} "Relationship table concept")
 
 ---
 
