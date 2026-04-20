@@ -82,7 +82,7 @@ From Project Organizer, add a new relationship table.
 
 2. From **Project**, right-click the **Advanced** folder and select **Add Relationship Table**.
 
-   ---
+    ---
 
     ![Add relationship table]({{ "/assets/img/Create_rel_table2.png" | relative_url }} "Add relationship table")
 
