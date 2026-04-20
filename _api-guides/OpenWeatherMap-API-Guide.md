@@ -226,7 +226,7 @@ To get started using the OpenWeatherMap API, create an account. Once your accoun
 
 ---
 
-![OpenWeatherMap account page](/assets/img/OpenWeather_1.png "OpenWeatherMap account page")
+![OpenWeatherMap account page]({{ "/assets/img/OpenWeather_1.png" | relative_url }} "OpenWeatherMap account page")
 
 ---
 
@@ -249,7 +249,7 @@ When you created your account, the OpenWeatherMap API generated a default API ke
 
 ---
 
-![Add API key](/assets/img/OpenWeather_2a.png "Add API key")
+![Add API key]({{ "/assets/img/OpenWeather_2a.png" | relative_url }} "Add API key")
 
 ---
 
